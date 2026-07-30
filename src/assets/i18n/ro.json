@@ -1,0 +1,239 @@
+{
+  "header": {
+    "tagline": "Voluntari cu inimă",
+    "donate": "Donează acum",
+    "nav": {
+      "home": "Acasă",
+      "about": "Despre noi",
+      "programs": "Programe",
+      "events": "Evenimente",
+      "contact": "Contact"
+    }
+  },
+  "banner": {
+    "slide1": {
+      "title": "Împreună pentru fiecare copil special",
+      "desc": "Suntem voluntari dedicaţi care oferim sprijin, dragoste şi oportunităţi copiilor cu autism şi sindrom Down. Fiecare copil merită o şansă să strălucească.",
+      "primary": "Despre noi",
+      "secondary": "Donează acum"
+    },
+    "slide2": {
+      "title": "Programe care schimbă vieţi",
+      "desc": "Programele noastre educaţionale şi terapeutice sunt concepute pentru a ajuta fiecare copil să-şi atingă potenţialul maxim într-un mediu sigur şi iubitor.",
+      "primary": "Programele noastre",
+      "secondary": "Contactează-ne"
+    },
+    "slide3": {
+      "title": "Fii parte din comunitatea noastră",
+      "desc": "Alătură-te evenimentelor noastre şi ajută-ne să construim o comunitate mai incluzivă. Împreună putem face diferenţa în viaţa acestor copii minunaţi.",
+      "primary": "Vezi evenimente",
+      "secondary": "Devino voluntar"
+    }
+  },
+  "gallery": {
+    "title": "Galeria noastră",
+    "subtitle": "Momente frumoase din activităţile şi evenimentele organizate de voluntarii Rain Children.",
+    "viewAll": "Toate fotografiile",
+    "alt": "Fotografie Rain Children",
+    "open": "Apasă pentru mărire",
+    "photos": "fotografii"
+  },
+  "events": {
+    "register": "Înregistrează-te",
+    "page": { "title": "Evenimente şi activităţi", "subtitle": "Alătură-te evenimentelor noastre şi fii parte din comunitatea noastră incluzivă." },
+    "upcoming": { "label": "În curând", "title": "Evenimente viitoare" },
+    "past":     { "label": "Arhivă",   "title": "Evenimente trecute", "badge": "Încheiat" },
+    "e1": { "date": "28 iunie 2026 · 10:00",      "title": "Festivalul de artă de vară",   "desc": "O zi întreagă de ateliere de artă, spectacole muzicale şi activităţi pentru copii şi familii.", "location": "Centrul Rain Children, Chișinău", "type": "Festival" },
+    "e2": { "date": "12 iulie 2026 · 09:00",      "title": "Ziua sportului incluziv",      "desc": "Competiţii sportive adaptate şi jocuri de echipă pentru copii de toate abilităţile.", "location": "Parcul Central, Chișinău", "type": "Sport" },
+    "e3": { "date": "5 august 2026 · 11:00",      "title": "Atelier de consiliere familială","desc": "Un atelier practic pentru părinţi privind strategiile de comunicare şi suport zilnic.", "location": "Centrul Rain Children, Chișinău", "type": "Atelier" },
+    "e4": { "date": "20 septembrie 2026 · 10:00", "title": "Gala caritabilă 2026",         "desc": "Gala noastră anuală de strângere de fonduri cu muzică live, licitaţie de artă şi vorbitori invitaţi.", "location": "Radisson Blu, Chișinău", "type": "Gală" },
+    "e5": { "date": "15 martie 2026",             "title": "Ziua voluntarului de primăvară","desc": "Peste 60 de voluntari s-au reunit pentru o zi de activităţi cu copiii din programele noastre.", "location": "Centrul Rain Children, Chișinău", "type": "Voluntariat" },
+    "e6": { "date": "14 februarie 2026",          "title": "Ziua bunătăţii",               "desc": "Copiii au creat felicitări şi cadouri în cadrul programului nostru de exprimare emoţională.", "location": "Centrul Rain Children, Chișinău", "type": "Activitate" },
+    "e7": { "date": "1 ianuarie 2026",            "title": "Petrecerea de Anul Nou",       "desc": "O celebrare festivă cu muzică, costume şi cadouri pentru toţi copiii şi familiile.", "location": "Primăria, Chișinău", "type": "Sărbătoare" }
+  },
+  "contact": {
+    "page":     { "title": "Contactează-ne", "subtitle": "Dacă vrei să voluntariezi, donezi, înscrii un copil sau să afli mai multe — suntem bucuroşi să te auzim." },
+    "form":     { "title": "Trimite-ne un mesaj", "name": "Nume complet", "nameError": "Te rugăm să introduci numele", "email": "Adresă de email", "emailError": "Introdu un email valid", "phone": "Telefon (opţional)", "subject": "Subiect", "subjectError": "Te rugăm să selectezi un subiect", "message": "Mesajul tău", "messageError": "Mesajul trebuie să aibă cel puţin 10 caractere", "submit": "Trimite mesajul", "sending": "Se trimite…", "error": "Ceva nu a mers. Te rugăm să încerci din nou." },
+    "subjects": { "volunteer": "Vreau să fiu voluntar", "donation": "Întrebare despre donaţie", "program": "Înscrie copilul meu", "partnership": "Propunere de parteneriat", "other": "Altele" },
+    "success":  { "title": "Mesaj trimis!", "desc": "Îţi mulţumim pentru mesaj. Te vom contacta în 1–2 zile lucrătoare." },
+    "info":     { "title": "Informaţii de contact", "desc": "Echipa noastră este disponibilă de luni până vineri. De obicei răspundem în aceeaşi zi lucrătoare.", "addressLabel": "Adresă", "address": "Str. Voluntarilor 14, Chișinău, Moldova", "phoneLabel": "Telefon", "emailLabel": "Email", "hoursLabel": "Program", "hours": "Lun – Vin · 09:00 – 18:00" },
+    "map":      { "placeholder": "Harta va fi integrată aici" }
+  },
+  "promoBanner": {
+    "label": "Sprijin real",
+    "title": "Fiecare donaţie schimbă o viaţă",
+    "desc": "Resursele tale ne ajută să oferim terapie, materiale educaţionale şi momente de bucurie copiilor care au cel mai mult nevoie de sprijin. Alătură-te misiunii noastre.",
+    "donate": "Donează acum",
+    "learnMore": "Află mai multe"
+  },
+  "about": {
+    "hero": {
+      "label": "Povestea noastră",
+      "title": "Conduşi de iubire, ghidaţi de scop",
+      "subtitle": "De peste 8 ani mergem alături de copiii cu autism şi sindrom Down, familiile lor şi comunităţile care îi susţin — transformând compasiunea în schimbare reală şi durabilă.",
+      "ctaPrimary": "Programele noastre",
+      "ctaSecondary": "Contactează-ne"
+    },
+    "mission": {
+      "label": "Cine suntem",
+      "title": "O comunitate construită pe empatie şi dedicare",
+      "desc": "Rain Children s-a născut din convingerea că fiecare copil, indiferent de diagnostic, merită o viaţă plină şi bucuroasă. Suntem o echipă de voluntari, terapeuţi şi educatori care lucrează zilnic pentru a transforma această convingere în realitate.",
+      "badgeText": "ani de impact",
+      "feature1": "Programe terapeutice şi educaţionale gratuite",
+      "feature2": "Sprijin personalizat pentru fiecare copil",
+      "feature3": "Evenimente incluzive pe tot parcursul anului",
+      "feature4": "Consiliere familială şi ateliere pentru părinţi",
+      "link": "Explorează programele noastre"
+    },
+    "stats": {
+      "childrenLabel": "Copii sprijiniţi",
+      "volunteersLabel": "Voluntari activi",
+      "yearsLabel": "Ani de activitate",
+      "eventsLabel": "Evenimente organizate"
+    },
+    "values": {
+      "label": "Ce ne motivează",
+      "title": "Valorile noastre fundamentale",
+      "v1": { "title": "Iubire necondiţionată", "desc": "Fiecare decizie pe care o luăm este fundamentată pe grija autentică faţă de copiii şi familiile pe care le servim." },
+      "v2": { "title": "Bucurie în fiecare moment", "desc": "Credem că fericirea nu este o destinaţie, ci o practică zilnică, pe care o cultivăm în tot ceea ce facem." },
+      "v3": { "title": "Comunitate incluzivă", "desc": "Construim spaţii în care fiecare copil se simte binevenit, valorizat şi celebrat exact aşa cum este." },
+      "v4": { "title": "Excelenţă în îngrijire", "desc": "Ne ridicăm continuu standardele pentru a asigura cele mai bune rezultate posibile copiilor din programele noastre." }
+    },
+    "story": {
+      "label": "Călătoria noastră",
+      "title": "Cum a luat naştere Rain Children",
+      "m1": { "title": "Începuturile", "desc": "Un grup mic de voluntari a început să se întâlnească săptămânal pentru a sprijini două familii cu copii cu autism — cu nimic altceva decât inimă şi determinare." },
+      "m2": { "title": "Primul centru deschis", "desc": "Am deschis centrul nostru dedicat din Chișinău, oferind programe structurate pentru 40 de copii de la bun început." },
+      "m3": { "title": "Recunoaştere naţională", "desc": "Rain Children a primit un premiu naţional pentru impact social, iar reţeaua noastră de voluntari a crescut la peste 80 de membri în toată Moldova." },
+      "m4": { "title": "Continuăm să creştem", "desc": "Astăzi sprijinim anual peste 1 200 de copii prin 6 programe specializate, cu 150+ voluntari activi şi noi parteneriate în formare." }
+    },
+    "team": {
+      "label": "Oamenii din spatele misiunii",
+      "title": "Echipa noastră",
+      "subtitle": "Echipa noastră de bază reuneşte terapeuţi, educatori, asistenţi sociali şi voluntari pasionaţi, uniţi de o singură misiune.",
+      "m1": { "name": "Maria Ionescu", "role": "Fondator şi Director" },
+      "m2": { "name": "Alexandru Popa", "role": "Director de Programe" },
+      "m3": { "name": "Elena Rusu", "role": "Terapeut Principal" },
+      "m4": { "name": "Andrei Ciobanu", "role": "Manager Comunitate" },
+      "joinText": "Vrei să faci parte din echipa noastră? Căutăm mereu voluntari dedicaţi.",
+      "joinBtn": "Devino voluntar"
+    },
+    "partners": {
+      "label": "Cine ne susţine",
+      "title": "Partenerii noştri de încredere"
+    }
+  },
+  "seo": {
+    "home": {
+      "title": "Rain Children — Împreună pentru fiecare copil special",
+      "description": "Rain Children este o organizaţie de voluntari care sprijină copiii cu autism şi sindrom Down prin terapie, educaţie şi programe comunitare în Moldova."
+    },
+    "about": {
+      "title": "Despre noi — Rain Children",
+      "description": "Află despre misiunea, echipa şi valorile noastre. Voluntarii Rain Children sunt dedicaţi schimbării vieţilor copiilor cu autism şi sindrom Down."
+    },
+    "programs": {
+      "title": "Programele noastre — Rain Children",
+      "description": "Explorează programele noastre terapeutice şi educaţionale: terapie prin artă, muzică, suport educaţional, integrare socială, sport şi consiliere familială."
+    },
+    "events": {
+      "title": "Evenimente — Rain Children",
+      "description": "Alătură-te evenimentelor noastre. Împreună construim o comunitate incluzivă pentru copiii cu autism şi sindrom Down."
+    },
+    "contact": {
+      "title": "Contact — Rain Children",
+      "description": "Ia legătura cu echipa Rain Children. Suntem deschişi voluntarilor, partenerilor şi familiilor care vor să facă o diferenţă."
+    },
+    "donate": {
+      "title": "Donează — Rain Children",
+      "description": "Donaţia ta ne ajută să oferim terapie, materiale educaţionale şi bucurie copiilor care au cel mai mult nevoie de sprijin."
+    },
+    "notFound": {
+      "title": "Pagină negăsită — Rain Children",
+      "description": "Pagina pe care o cauţi nu există."
+    }
+  },
+  "notFound": {
+    "title": "Pagină negăsită",
+    "desc": "Pagina pe care o cauţi nu există sau a fost mutată.",
+    "back": "Înapoi acasă"
+  },
+  "footer": {
+    "about": "Suntem voluntari dedicaţi sprijinirii copiilor cu autism şi sindrom Down prin terapie, educaţie şi comunitate.",
+    "nav": "Navigare",
+    "programs": "Programe",
+    "contact": "Contact",
+    "address": "Chișinău, Moldova",
+    "rights": "Toate drepturile rezervate.",
+    "privacy": "Politica de confidenţialitate",
+    "terms": "Termeni de utilizare"
+  },
+  "faq": {
+    "label": "FAQ",
+    "title": "Întrebări frecvente",
+    "subtitle": "Tot ce trebuie să ştii despre Rain Children — misiunea noastră, programele şi cum te poţi implica.",
+    "q1": "Ce este Rain Children şi pe cine ajută?",
+    "a1": "Rain Children este o organizaţie de voluntari dedicată sprijinirii copiilor cu autism şi sindrom Down. Oferim programe terapeutice, activităţi educaţionale şi evenimente comunitare pentru ca fiecare copil să-şi atingă potenţialul.",
+    "q2": "Cum pot deveni voluntar?",
+    "a2": "Vizitează pagina de Contact şi completează formularul pentru voluntari. Nu sunt necesare abilităţi speciale — doar dorinţa de a oferi timp şi compasiune. Te vom contacta pentru o întâlnire introductivă.",
+    "q3": "Programele sunt gratuite pentru familii?",
+    "a3": "Da. Toate programele şi serviciile noastre sunt oferite gratuit familiilor. Suntem finanţaţi exclusiv din donaţii şi granturi, astfel încât fiecare contribuţie ajunge direct la copii.",
+    "q4": "Cum pot dona şi voi primi o chitanţă?",
+    "a4": "Poţi dona prin pagina Donează folosind un transfer bancar sau plată online. După fiecare donaţie vei primi o chitanţă oficială care poate fi folosită în scopuri fiscale.",
+    "q5": "Pot organizaţiile sau şcolile să devină parteneri?",
+    "a5": "Absolut. Colaborăm activ cu şcoli, clinici şi companii. Dacă reprezinţi o organizaţie interesată de un parteneriat, contactează-ne prin pagina Contact şi vom discuta posibilităţile.",
+    "q6": "Unde au loc activităţile?",
+    "a6": "Activităţile se desfăşoară la centrul nostru, precum şi în şcoli partenere şi spaţii comunitare din oraş. Verifică pagina Evenimente pentru programul şi locaţiile actualizate."
+  },
+  "programs": {
+    "label": "Ce facem",
+    "title": "Programele noastre",
+    "learnMore": "Află mai multe →",
+    "page": { "title": "Programele noastre", "subtitle": "Şase programe specializate pentru dezvoltarea completă a fiecărui copil — gratuite pentru toate familiile.", "enroll": "Înscrie copilul tău" },
+    "art":       { "title": "Terapia prin artă",      "desc": "Ateliere de pictură care oferă copiilor un limbaj de exprimare liberă şi vindecare emoţională.", "a1": "Ateliere săptămânale de pictură", "a2": "Activităţi artistice senzoriale", "a3": "Expoziţie anuală pentru familii" },
+    "music":     { "title": "Terapia prin muzică",    "desc": "Activităţi de ritm şi melodie care stimulează abilităţile de comunicare şi aduc bucurie.", "a1": "Sesiuni de ritm şi percuţie", "a2": "Cânt şi exerciţii vocale", "a3": "Jocuri sociale muzicale" },
+    "education": { "title": "Suport educaţional",    "desc": "Sesiuni de învăţare structurate, adaptate ritmului şi nevoilor unice ale fiecărui copil.", "a1": "Planuri de învăţare personalizate", "a2": "Suport pentru limbaj şi vorbire", "a3": "Asistenţă pentru integrare şcolară" },
+    "social":    { "title": "Integrare socială",     "desc": "Activităţi de grup şi evenimente comunitare care cultivă prietenii şi relaţii incluzive.", "a1": "Jocuri de grup şi activităţi de echipă", "a2": "Proiecte de voluntariat comunitar", "a3": "Turnee sportive incluzive" },
+    "sport":     { "title": "Sport şi mişcare",      "desc": "Activităţi fizice şi jocuri care dezvoltă motricitatea, coordonarea şi încrederea în sine.", "a1": "Gimnastică şi yoga adaptate", "a2": "Jocuri cu mingea şi activităţi în aer liber", "a3": "Antrenament motricitate" },
+    "family":    { "title": "Consiliere familială",  "desc": "Ateliere şi consultaţii regulate care oferă părinţilor instrumente pentru a sprijini copilul acasă.", "a1": "Ateliere lunare pentru părinţi", "a2": "Consultaţii individuale cu specialişti", "a3": "Întâlniri ale grupului de suport" }
+  },
+  "volunteerBanner": {
+    "label": "Alătură-te",
+    "title": "Devino voluntar şi schimbă vieţi",
+    "desc": "Nu trebuie să fii specialist — trebuie să ai o inimă deschisă să dăruiască. Alătură-te sutelor de voluntari care îşi dedică timpul pentru a crea o lume mai bună pentru copiii noştri.",
+    "volunteer": "Devino voluntar",
+    "programs": "Vezi programele noastre"
+  },
+  "blog": {
+    "title": "Ultimele noutăţi",
+    "subtitle": "Poveşti, actualizări şi materiale din comunitatea Rain Children.",
+    "viewAll": "Toate postările",
+    "readMore": "Citeşte mai mult",
+    "posts": {
+      "1": {
+        "title": "Cum îi ajutăm pe copiii cu autism să se integreze",
+        "excerpt": "Fiecare copil cu autism are un potenţial unic. Prin activităţi structurate şi sprijin constant, voluntarii noştri ajută aceşti copii să descopere lumea în ritmul lor propriu."
+      },
+      "2": {
+        "title": "Terapia prin artă: culori care vindecă suflete",
+        "excerpt": "Atelierele de pictură şi desen devin un spaţiu de exprimare liberă pentru copiii noştri. Arta le oferă un limbaj când cuvintele nu sunt de ajuns."
+      },
+      "3": {
+        "title": "Poveştile voluntarilor noştri",
+        "excerpt": "Oamenii care se alătură Rain Children aduc cu ei mai mult decât timp — aduc empatie, răbdare şi dorinţa sinceră de a face o diferenţă reală în viaţa copiilor."
+      },
+      "4": {
+        "title": "Sindromul Down şi integrarea şcolară de succes",
+        "excerpt": "Împreună cu familiile şi instituţiile de învăţământ, lucrăm pentru a crea medii incluzive în care copiii cu sindrom Down să se simtă acceptaţi şi valorizaţi."
+      },
+      "5": {
+        "title": "Evenimentul caritabil Rain Children 2025",
+        "excerpt": "Peste 200 de participanţi s-au adunat pentru a sprijini misiunea noastră. Fondurile strânse vor finanţa noi programe terapeutice pentru copiii din comunitate."
+      },
+      "6": {
+        "title": "Părinţi şi specialişti: un parteneriat esenţial",
+        "excerpt": "Organizăm întâlniri regulate între familii şi experţi în terapie, pentru a oferi părinţilor instrumentele necesare de a continua sprijinul acasă."
+      }
+    }
+  }
+}

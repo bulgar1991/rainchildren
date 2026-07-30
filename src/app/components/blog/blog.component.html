@@ -1,0 +1,43 @@
+<section class="blog">
+  <div class="max-w-screen-3xl mx-auto lg:px-desktop px-mobile">
+
+    <!-- Section header: title + view all -->
+    <div class="blog__header">
+      <h2 class="blog__title">{{ 'blog.title' | translate }}</h2>
+      @if (showViewAll) {
+        <a routerLink="/blog" class="blog__view-all">
+          {{ 'blog.viewAll' | translate }}
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" width="16" height="16">
+            <polyline points="9 18 15 12 9 6" />
+          </svg>
+        </a>
+      }
+    </div>
+
+    <!-- Cards grid -->
+    <div class="blog__grid">
+      @for (post of posts; track post.id) {
+        <article class="post-card">
+          <a [routerLink]="['/blog', post.slug]" class="post-card__img-wrap">
+            <img [src]="post.image" [alt]="post.titleKey | translate" class="post-card__img" />
+          </a>
+          <div class="post-card__body">
+            <h3 class="post-card__title">
+              <a [routerLink]="['/blog', post.slug]">{{ post.titleKey | translate }}</a>
+            </h3>
+            <p class="post-card__excerpt">{{ post.excerptKey | translate }}</p>
+            <a [routerLink]="['/blog', post.slug]" class="post-card__btn">
+              {{ 'blog.readMore' | translate }}
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" width="14" height="14">
+                <polyline points="9 18 15 12 9 6" />
+              </svg>
+            </a>
+          </div>
+        </article>
+      }
+    </div>
+
+  </div>
+</section>

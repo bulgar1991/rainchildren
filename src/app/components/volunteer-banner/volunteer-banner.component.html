@@ -1,0 +1,18 @@
+<section class="vol-banner">
+  <img src="assets/images/volunteer-banner.jpg" alt="" class="vol-banner__bg" />
+  <div class="vol-banner__overlay"></div>
+
+  <div class="vol-banner__inner max-w-screen-3xl mx-auto lg:px-desktop px-mobile">
+    <span class="vol-banner__label">{{ 'volunteerBanner.label' | translate }}</span>
+    <h2 class="vol-banner__title">{{ 'volunteerBanner.title' | translate }}</h2>
+    <p class="vol-banner__desc">{{ 'volunteerBanner.desc' | translate }}</p>
+    <div class="vol-banner__actions">
+      <a routerLink="/contact" class="vol-banner__btn vol-banner__btn--primary">
+        {{ 'volunteerBanner.volunteer' | translate }}
+      </a>
+      <a routerLink="/programs" class="vol-banner__btn vol-banner__btn--secondary">
+        {{ 'volunteerBanner.programs' | translate }}
+      </a>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,39 @@
+<section class="programs-slider">
+  <div class="programs-slider__head max-w-screen-3xl mx-auto lg:px-desktop px-mobile">
+    <div class="programs-slider__titles">
+      <span class="programs-slider__label">{{ 'programs.label' | translate }}</span>
+      <h2 class="programs-slider__title">{{ 'programs.title' | translate }}</h2>
+    </div>
+    <div class="programs-slider__nav">
+      <button class="programs-slider__arrow programs-slider__arrow--prev" aria-label="Previous">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+          stroke-linecap="round" stroke-linejoin="round" width="20" height="20">
+          <polyline points="15 18 9 12 15 6" />
+        </svg>
+      </button>
+      <button class="programs-slider__arrow programs-slider__arrow--next" aria-label="Next">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+          stroke-linecap="round" stroke-linejoin="round" width="20" height="20">
+          <polyline points="9 18 15 12 9 6" />
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <div class="swiper programs-slider__swiper" #swiperEl>
+    <div class="swiper-wrapper">
+      @for (program of programs; track program.titleKey) {
+        <div class="swiper-slide">
+          <a [routerLink]="program.link" class="prog-card">
+            <div class="prog-card__icon-wrap" [style.--color]="program.color">
+              <span class="prog-card__icon" [innerHTML]="program.icon"></span>
+            </div>
+            <h3 class="prog-card__title">{{ program.titleKey | translate }}</h3>
+            <p class="prog-card__desc">{{ program.descKey | translate }}</p>
+            <span class="prog-card__more">{{ 'programs.learnMore' | translate }}</span>
+          </a>
+        </div>
+      }
+    </div>
+  </div>
+</section>

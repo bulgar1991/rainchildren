@@ -1,0 +1,241 @@
+{
+  "header": {
+    "tagline": "Volunteers with heart",
+    "donate": "Donate now",
+    "nav": {
+      "home": "Home",
+      "about": "About us",
+      "programs": "Programs",
+      "events": "Events",
+      "contact": "Contact"
+    }
+  },
+  "banner": {
+    "slide1": {
+      "title": "Together for every special child",
+      "desc": "We are dedicated volunteers providing support, love and opportunities for children with autism and Down syndrome. Every child deserves a chance to shine.",
+      "primary": "About us",
+      "secondary": "Donate now"
+    },
+    "slide2": {
+      "title": "Programs that change lives",
+      "desc": "Our educational and therapeutic programs are designed to help every child reach their full potential in a safe and loving environment.",
+      "primary": "Our programs",
+      "secondary": "Contact us"
+    },
+    "slide3": {
+      "title": "Be part of our community",
+      "desc": "Join our events and help us build a more inclusive community. Together we can make a difference in the lives of these wonderful children.",
+      "primary": "See events",
+      "secondary": "Become a volunteer"
+    }
+  },
+  "gallery": {
+    "title": "Our gallery",
+    "subtitle": "Beautiful moments from activities and events organised by Rain Children volunteers.",
+    "viewAll": "View all photos",
+    "alt": "Rain Children photo",
+    "open": "Click to enlarge",
+    "photos": "photos"
+  },
+  "events": {
+    "register": "Register",
+    "page": { "title": "Events & activities", "subtitle": "Join our upcoming events and be part of our inclusive community." },
+    "upcoming": { "label": "Coming up", "title": "Upcoming events" },
+    "past":     { "label": "Archive",   "title": "Past events", "badge": "Ended" },
+    "e1": { "date": "28 June 2026 · 10:00",      "title": "Summer Art Festival",       "desc": "A full day of art workshops, music performances and activities open to all children and families.", "location": "Rain Children Centre, Chișinău", "type": "Festival" },
+    "e2": { "date": "12 July 2026 · 09:00",      "title": "Inclusive Sports Day",      "desc": "Adapted sports competitions and team games for children of all abilities.", "location": "Central Park, Chișinău", "type": "Sport" },
+    "e3": { "date": "5 August 2026 · 11:00",     "title": "Family Counseling Workshop","desc": "A practical workshop for parents covering communication strategies and daily support techniques.", "location": "Rain Children Centre, Chișinău", "type": "Workshop" },
+    "e4": { "date": "20 September 2026 · 10:00", "title": "Charity Gala 2026",         "desc": "Our annual fundraising gala with live music, an art auction and keynote speakers.", "location": "Radisson Blu Hotel, Chișinău", "type": "Gala" },
+    "e5": { "date": "15 March 2026",             "title": "Spring Volunteer Day",      "desc": "Over 60 volunteers came together for a day of activities with children from our programs.", "location": "Rain Children Centre, Chișinău", "type": "Volunteer" },
+    "e6": { "date": "14 February 2026",          "title": "Valentine's Day of Kindness","desc": "Children made handmade cards and gifts as part of our emotional expression program.", "location": "Rain Children Centre, Chișinău", "type": "Activity" },
+    "e7": { "date": "1 January 2026",            "title": "New Year Celebration Party", "desc": "A festive celebration with music, costumes and gifts for all children and families.", "location": "City Hall, Chișinău", "type": "Celebration" }
+  },
+  "contact": {
+    "page":     { "title": "Get in touch", "subtitle": "Whether you want to volunteer, donate, enroll a child or learn more — we'd love to hear from you." },
+    "form":     { "title": "Send us a message", "name": "Full name", "nameError": "Please enter your name", "email": "Email address", "emailError": "Please enter a valid email", "phone": "Phone (optional)", "subject": "Subject", "subjectError": "Please select a subject", "message": "Your message", "messageError": "Message must be at least 10 characters", "submit": "Send message", "sending": "Sending…", "error": "Something went wrong. Please try again." },
+    "subjects": { "volunteer": "I want to volunteer", "donation": "Donation enquiry", "program": "Enroll my child", "partnership": "Partnership proposal", "other": "Other" },
+    "success":  { "title": "Message sent!", "desc": "Thank you for reaching out. We'll get back to you within 1–2 business days." },
+    "info":     { "title": "Contact information", "desc": "Our team is available Monday to Friday. We typically respond within one business day.", "addressLabel": "Address", "address": "Str. Voluntarilor 14, Chișinău, Moldova", "phoneLabel": "Phone", "emailLabel": "Email", "hoursLabel": "Working hours", "hours": "Mon – Fri · 09:00 – 18:00" },
+    "map":      { "placeholder": "Map will be integrated here" }
+  },
+  "promoBanner": {
+    "label": "Real support",
+    "title": "Every donation changes a life",
+    "desc": "Your resources help us provide therapy, educational materials and moments of joy to children who need support the most. Join our mission.",
+    "donate": "Donate now",
+    "learnMore": "Learn more"
+  },
+  "about": {
+    "hero": {
+      "label": "Our story",
+      "title": "Driven by love, guided by purpose",
+      "subtitle": "For over 8 years we have walked alongside children with autism and Down syndrome, their families and the communities that support them — turning compassion into real, lasting change.",
+      "ctaPrimary": "Our programs",
+      "ctaSecondary": "Contact us"
+    },
+    "mission": {
+      "label": "Who we are",
+      "title": "A community built on empathy and dedication",
+      "desc": "Rain Children was born from the belief that every child, regardless of diagnosis, deserves a full and joyful life. We are a team of passionate volunteers, therapists and educators working together to make that belief a reality every single day.",
+      "badgeText": "years of impact",
+      "feature1": "Free therapeutic and educational programs",
+      "feature2": "Personalised support for each child",
+      "feature3": "Inclusive community events year-round",
+      "feature4": "Family counseling and parent workshops",
+      "link": "Explore our programs"
+    },
+    "stats": {
+      "childrenLabel": "Children supported",
+      "volunteersLabel": "Active volunteers",
+      "yearsLabel": "Years of work",
+      "eventsLabel": "Events organised"
+    },
+    "values": {
+      "label": "What drives us",
+      "title": "Our core values",
+      "v1": { "title": "Unconditional love", "desc": "Every decision we make is grounded in genuine care for the children and families we serve." },
+      "v2": { "title": "Joy in every moment", "desc": "We believe happiness is not a destination but a daily practice, and we cultivate it in everything we do." },
+      "v3": { "title": "Inclusive community", "desc": "We build spaces where every child feels welcomed, valued and celebrated for exactly who they are." },
+      "v4": { "title": "Excellence in care", "desc": "We continuously raise our standards to ensure the best possible outcomes for the children in our programs." }
+    },
+    "story": {
+      "label": "Our journey",
+      "title": "How Rain Children came to be",
+      "m1": { "title": "The beginning", "desc": "A small group of volunteers started meeting weekly to support two families with autistic children — with nothing but heart and determination." },
+      "m2": { "title": "First centre opened", "desc": "We opened our dedicated activity centre in Chișinău, offering structured programs to 40 children from the start." },
+      "m3": { "title": "National recognition", "desc": "Rain Children received a national award for social impact, and our volunteer network grew to over 80 members across Moldova." },
+      "m4": { "title": "Growing stronger", "desc": "Today we support over 1 200 children annually through 6 specialised programs, with 150+ active volunteers and new partnerships forming every year." }
+    },
+    "team": {
+      "label": "The people behind it",
+      "title": "Meet our team",
+      "subtitle": "Our core team brings together therapists, educators, social workers and passionate volunteers united by one mission.",
+      "m1": { "name": "Maria Ionescu", "role": "Founder & Director" },
+      "m2": { "name": "Alexandru Popa", "role": "Head of Programs" },
+      "m3": { "name": "Elena Rusu", "role": "Lead Therapist" },
+      "m4": { "name": "Andrei Ciobanu", "role": "Community Manager" },
+      "joinText": "Want to be part of our team? We are always looking for dedicated volunteers.",
+      "joinBtn": "Become a volunteer"
+    },
+    "partners": {
+      "label": "Who supports us",
+      "title": "Our trusted partners"
+    }
+  },
+  "seo": {
+    "gallery": { "title": "Gallery — Rain Children", "description": "Browse photos from our events, therapy sessions and community activities." },
+    "blog":    { "title": "News — Rain Children",    "description": "Latest stories, updates and insights from the Rain Children community." },
+    "home": {
+      "title": "Rain Children — Together for Every Special Child",
+      "description": "Rain Children is a volunteer organisation supporting children with autism and Down syndrome through therapy, education and community programs in Moldova."
+    },
+    "about": {
+      "title": "About Us — Rain Children",
+      "description": "Learn about our mission, team and values. Rain Children volunteers are dedicated to making a difference in the lives of children with autism and Down syndrome."
+    },
+    "programs": {
+      "title": "Our Programs — Rain Children",
+      "description": "Explore our therapeutic and educational programs: art therapy, music therapy, educational support, social integration, sports and family counseling."
+    },
+    "events": {
+      "title": "Events — Rain Children",
+      "description": "Join our upcoming events and activities. Together we build an inclusive community for children with autism and Down syndrome."
+    },
+    "contact": {
+      "title": "Contact Us — Rain Children",
+      "description": "Get in touch with the Rain Children team. We welcome volunteers, partners and families who want to make a difference."
+    },
+    "donate": {
+      "title": "Donate — Rain Children",
+      "description": "Your donation helps us provide therapy, educational materials and moments of joy to children who need support the most."
+    },
+    "notFound": {
+      "title": "Page Not Found — Rain Children",
+      "description": "The page you are looking for does not exist."
+    }
+  },
+  "notFound": {
+    "title": "Page not found",
+    "desc": "The page you are looking for doesn't exist or has been moved.",
+    "back": "Back to home"
+  },
+  "footer": {
+    "about": "We are volunteers dedicated to supporting children with autism and Down syndrome through therapy, education and community.",
+    "nav": "Navigation",
+    "programs": "Programs",
+    "contact": "Contact",
+    "address": "Chișinău, Moldova",
+    "rights": "All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Use"
+  },
+  "faq": {
+    "label": "FAQ",
+    "title": "Frequently asked questions",
+    "subtitle": "Everything you need to know about Rain Children — our mission, programs and how you can get involved.",
+    "q1": "What is Rain Children and who does it help?",
+    "a1": "Rain Children is a volunteer organisation dedicated to supporting children with autism and Down syndrome. We provide therapeutic programs, educational activities and community events to help every child reach their full potential.",
+    "q2": "How can I become a volunteer?",
+    "a2": "Simply visit our Contact page and fill in the volunteer form. No special skills are required — just a willingness to give your time and compassion. We will reach out to schedule an introductory meeting.",
+    "q3": "Are your programs free for families?",
+    "a3": "Yes. All of our programs and services are provided free of charge to families. We are funded entirely through donations and grants, so every contribution goes directly to the children.",
+    "q4": "How can I donate and will I receive a receipt?",
+    "a4": "You can donate through our Donate page using a bank transfer or online payment. After each donation you will receive an official receipt that can be used for tax purposes.",
+    "q5": "Can organisations or schools partner with Rain Children?",
+    "a5": "Absolutely. We actively collaborate with schools, clinics and businesses. If you represent an organisation interested in partnering with us, please reach out via our Contact page and we will discuss the possibilities.",
+    "q6": "Where do your activities take place?",
+    "a6": "Our activities are held at our dedicated centre as well as partner schools and community spaces around the city. Check our Events page for the latest schedule and locations."
+  },
+  "programs": {
+    "label": "What we do",
+    "title": "Our programs",
+    "learnMore": "Learn more →",
+    "page": { "title": "Our programs", "subtitle": "Six specialised programs designed to nurture every dimension of a child's growth — free of charge for all families.", "enroll": "Enroll your child" },
+    "art":       { "title": "Art Therapy",         "desc": "Painting and drawing workshops that give children a language of free expression and emotional healing.", "a1": "Weekly painting & drawing workshops", "a2": "Sensory art activities", "a3": "Annual art exhibition for families" },
+    "music":     { "title": "Music Therapy",       "desc": "Rhythm and melody activities that stimulate communication skills and bring joy to every child.", "a1": "Rhythm and percussion sessions", "a2": "Singing and vocal exercises", "a3": "Music-based social games" },
+    "education": { "title": "Educational Support", "desc": "Structured learning sessions tailored to each child's pace and unique developmental needs.", "a1": "Personalised learning plans", "a2": "Speech and language support", "a3": "School integration assistance" },
+    "social":    { "title": "Social Integration",  "desc": "Group activities and community events that foster friendships and inclusive relationships.", "a1": "Group play and team activities", "a2": "Community volunteering projects", "a3": "Inclusive sport tournaments" },
+    "sport":     { "title": "Sports & Movement",   "desc": "Physical activities and games that develop motor skills, coordination and self-confidence.", "a1": "Adapted gymnastics & yoga", "a2": "Ball games and outdoor activities", "a3": "Motor skills training" },
+    "family":    { "title": "Family Counseling",   "desc": "Regular workshops and consultations that equip parents with tools to support their child at home.", "a1": "Monthly parent workshops", "a2": "One-to-one specialist consultations", "a3": "Support group meetings" }
+  },
+  "volunteerBanner": {
+    "label": "Join us",
+    "title": "Become a volunteer and change lives",
+    "desc": "You don't need to be a specialist — you need a heart open to giving. Join hundreds of volunteers who dedicate their time to creating a better world for our children.",
+    "volunteer": "Become a volunteer",
+    "programs": "See our programs"
+  },
+  "blog": {
+    "title": "Latest news",
+    "subtitle": "Stories, updates and insights from the Rain Children community.",
+    "viewAll": "View all posts",
+    "readMore": "Read more",
+    "posts": {
+      "1": {
+        "title": "How we help children with autism integrate",
+        "excerpt": "Every child with autism has unique potential. Through structured activities and constant support, our volunteers help these children discover the world at their own pace."
+      },
+      "2": {
+        "title": "Art therapy: colours that heal souls",
+        "excerpt": "Painting and drawing workshops become a space of free expression for our children. Art gives them a language when words are not enough."
+      },
+      "3": {
+        "title": "Stories from our volunteers",
+        "excerpt": "People who join Rain Children bring more than time — they bring empathy, patience and a sincere desire to make a real difference in the lives of children."
+      },
+      "4": {
+        "title": "Down syndrome and successful school integration",
+        "excerpt": "Together with families and educational institutions, we work to create inclusive environments where children with Down syndrome feel accepted and valued."
+      },
+      "5": {
+        "title": "Rain Children charity event 2025",
+        "excerpt": "Over 200 participants gathered to support our mission. The funds raised will finance new therapeutic programs for children in the community."
+      },
+      "6": {
+        "title": "Parents and specialists: an essential partnership",
+        "excerpt": "We organise regular meetings between families and therapy experts, to provide parents with the tools to continue support at home."
+      }
+    }
+  }
+}

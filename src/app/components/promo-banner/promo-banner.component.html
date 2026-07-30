@@ -1,0 +1,23 @@
+<section class="promo-banner">
+  <div class="promo-banner__inner max-w-screen-3xl mx-auto lg:px-desktop px-mobile">
+
+    <div class="promo-banner__image-wrap">
+      <img src="assets/images/promo-banner.jpg" alt="" class="promo-banner__img" />
+    </div>
+
+    <div class="promo-banner__content">
+      <span class="promo-banner__label">{{ 'promoBanner.label' | translate }}</span>
+      <h2 class="promo-banner__title">{{ 'promoBanner.title' | translate }}</h2>
+      <p class="promo-banner__desc">{{ 'promoBanner.desc' | translate }}</p>
+      <div class="promo-banner__actions">
+        <a routerLink="/donate" class="promo-banner__btn promo-banner__btn--primary">
+          {{ 'promoBanner.donate' | translate }}
+        </a>
+        <a routerLink="/about" class="promo-banner__btn promo-banner__btn--secondary">
+          {{ 'promoBanner.learnMore' | translate }}
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>

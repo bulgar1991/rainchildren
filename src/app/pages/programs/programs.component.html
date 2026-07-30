@@ -1,0 +1,49 @@
+<!-- Hero -->
+<section class="page-hero">
+  <div class="page-hero__inner max-w-screen-3xl mx-auto lg:px-desktop px-mobile">
+    <nav class="page-hero__breadcrumb">
+      <a routerLink="/" class="page-hero__bc-link">{{ 'header.nav.home' | translate }}</a>
+      <span>/</span>
+      <span>{{ 'header.nav.programs' | translate }}</span>
+    </nav>
+    <h1 class="page-hero__title">{{ 'programs.page.title' | translate }}</h1>
+    <p class="page-hero__sub">{{ 'programs.page.subtitle' | translate }}</p>
+  </div>
+</section>
+
+<!-- Programs grid -->
+<section class="progs-section">
+  <div class="progs-section__inner max-w-screen-3xl mx-auto lg:px-desktop px-mobile">
+    @for (prog of programs; track prog.titleKey; let even = $even) {
+      <div class="prog-block" [class.prog-block--reverse]="!even">
+        <div class="prog-block__image-wrap">
+          <img [src]="prog.image" alt="" class="prog-block__img" />
+          <div class="prog-block__icon-badge" [style.--c]="prog.color" [innerHTML]="prog.icon"></div>
+        </div>
+        <div class="prog-block__content">
+          <h2 class="prog-block__title" [style.color]="prog.color">{{ prog.titleKey | translate }}</h2>
+          <p class="prog-block__desc">{{ prog.descKey | translate }}</p>
+          <ul class="prog-block__activities">
+            @for (a of prog.activities; track a) {
+              <li class="prog-block__activity">
+                <span class="prog-block__check" [style.--c]="prog.color">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round" width="13" height="13">
+                    <polyline points="20 6 9 17 4 12"/>
+                  </svg>
+                </span>
+                {{ a | translate }}
+              </li>
+            }
+          </ul>
+          <a routerLink="/contact" class="prog-block__btn" [style.--c]="prog.color">
+            {{ 'programs.page.enroll' | translate }}
+          </a>
+        </div>
+      </div>
+    }
+  </div>
+</section>
+
+<!-- CTA -->
+<app-volunteer-banner />

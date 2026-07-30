@@ -1,0 +1,29 @@
+<section class="faq">
+  <div class="faq__inner max-w-screen-3xl mx-auto lg:px-desktop px-mobile">
+
+    <!-- Left column -->
+    <div class="faq__left">
+      <span class="faq__label">{{ 'faq.label' | translate }}</span>
+      <h2 class="faq__title">{{ 'faq.title' | translate }}</h2>
+      <p class="faq__subtitle">{{ 'faq.subtitle' | translate }}</p>
+      <div class="faq__image-wrap">
+        <img src="assets/images/faq-image.jpg" alt="" class="faq__image" />
+      </div>
+    </div>
+
+    <!-- Right column — Material accordion -->
+    <div class="faq__right">
+      <mat-accordion [multi]="false" class="faq__accordion">
+        @for (item of items; track item.questionKey) {
+          <mat-expansion-panel class="faq__panel">
+            <mat-expansion-panel-header>
+              <mat-panel-title>{{ item.questionKey | translate }}</mat-panel-title>
+            </mat-expansion-panel-header>
+            <p class="faq__answer">{{ item.answerKey | translate }}</p>
+          </mat-expansion-panel>
+        }
+      </mat-accordion>
+    </div>
+
+  </div>
+</section>
