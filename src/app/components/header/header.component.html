@@ -1,0 +1,160 @@
+<header class="header" [class.header--scrolled]="isScrolled()">
+  <div class="header__container max-w-screen-3xl mx-auto lg:px-desktop px-mobile">
+    <!-- ── Logo ──────────────────────────────────────── -->
+    <a routerLink="/" class="header__logo" (click)="closeMenu()">
+      <img class="header__logo-img" src="assets/images/site-logo.jpg" alt="Rain Children" />
+      <div class="header__logo-body">
+        <span class="header__logo-name">
+          Rain <strong class="header__logo-name-accent">Children</strong>
+        </span>
+        <span class="header__logo-tagline">{{ 'header.tagline' | translate }}</span>
+      </div>
+    </a>
+
+    <!-- ── Desktop nav (hidden at $bp-nav) ──────────── -->
+    <nav class="header__nav">
+      <ul class="header__nav-list">
+        @for (item of navItems; track item.path) {
+          <li class="header__nav-item">
+            <a
+              [routerLink]="item.path"
+              routerLinkActive="header__nav-link--active"
+              [routerLinkActiveOptions]="{ exact: item.path === '/' }"
+              class="header__nav-link"
+            >
+              {{ item.key | translate }}
+            </a>
+          </li>
+        }
+      </ul>
+    </nav>
+
+    <!-- ── Actions ───────────────────────────────────── -->
+    <div class="header__actions">
+      <!-- Lang switcher — hidden at $bp-lang -->
+      <div class="header__lang">
+        @for (lang of langs; track lang.code) {
+          <button
+            class="header__lang-btn"
+            [class.header__lang-btn--active]="activeLang() === lang.code"
+            (click)="switchLang(lang.code)"
+          >
+            <span class="header__lang-flag">{{ lang.flag }}</span>
+            <span class="header__lang-label">{{ lang.label }}</span>
+          </button>
+        }
+      </div>
+
+      <!-- Donate -->
+      <a routerLink="/donate" class="header__donate" (click)="closeMenu()">
+        <svg
+          class="header__donate-icon"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          width="15"
+          height="15"
+        >
+          <path
+            d="M12 21.593c-5.63-5.539-11-10.297-11-14.402 0-3.791 3.068-5.191 5.281-5.191 1.312 0 4.151.501 5.719 4.457 1.59-3.968 4.464-4.447 5.726-4.447 2.54 0 5.274 1.621 5.274 5.181 0 4.069-5.136 8.625-11 14.402z"
+          />
+        </svg>
+        <span class="header__donate-text">{{ 'header.donate' | translate }}</span>
+      </a>
+
+      <!-- Burger — shown from $bp-nav -->
+      <button
+        class="header__burger"
+        [class.header__burger--open]="isMenuOpen()"
+        (click)="toggleMenu()"
+        [attr.aria-expanded]="isMenuOpen()"
+        aria-label="Toggle menu"
+      >
+        <span class="header__burger-line"></span>
+        <span class="header__burger-line"></span>
+        <span class="header__burger-line"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ── Sidebar overlay ───────────────────────────────── -->
+<div
+  class="header-overlay"
+  role="presentation"
+  [class.header-overlay--visible]="isMenuOpen()"
+  (click)="closeMenu()"
+></div>
+
+<!-- ── Sidebar panel ─────────────────────────────────── -->
+<aside class="header-sidebar" [class.header-sidebar--open]="isMenuOpen()">
+  <!-- Sidebar top: logo + close -->
+  <div class="header-sidebar__top">
+    <a routerLink="/" class="header-sidebar__logo" (click)="closeMenu()">
+      <img class="header-sidebar__logo-img" src="assets/images/site-logo.jpg" alt="Rain Children" />
+      <span class="header-sidebar__logo-name">Rain <strong>Children</strong></span>
+    </a>
+    <button class="header-sidebar__close" (click)="closeMenu()" aria-label="Close menu">
+      <svg
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        width="20"
+        height="20"
+      >
+        <line x1="18" y1="6" x2="6" y2="18" />
+        <line x1="6" y1="6" x2="18" y2="18" />
+      </svg>
+    </button>
+  </div>
+
+  <!-- Nav links -->
+  <nav class="header-sidebar__nav">
+    <ul class="header-sidebar__list">
+      @for (item of navItems; track item.path) {
+        <li class="header-sidebar__item">
+          <a
+            [routerLink]="item.path"
+            routerLinkActive="header-sidebar__link--active"
+            [routerLinkActiveOptions]="{ exact: item.path === '/' }"
+            class="header-sidebar__link"
+            (click)="closeMenu()"
+          >
+            {{ item.key | translate }}
+          </a>
+        </li>
+      }
+    </ul>
+  </nav>
+
+  <!-- Sidebar footer: lang + donate -->
+  <div class="header-sidebar__footer">
+    <div class="header-sidebar__lang">
+      @for (lang of langs; track lang.code) {
+        <button
+          class="header__lang-btn"
+          [class.header__lang-btn--active]="activeLang() === lang.code"
+          (click)="switchLang(lang.code)"
+        >
+          <span class="header__lang-flag">{{ lang.flag }}</span>
+          <span class="header__lang-label">{{ lang.label }}</span>
+        </button>
+      }
+    </div>
+    <a routerLink="/donate" class="header__donate header__donate--wide" (click)="closeMenu()">
+      <svg
+        class="header__donate-icon"
+        viewBox="0 0 24 24"
+        fill="currentColor"
+        width="15"
+        height="15"
+      >
+        <path
+          d="M12 21.593c-5.63-5.539-11-10.297-11-14.402 0-3.791 3.068-5.191 5.281-5.191 1.312 0 4.151.501 5.719 4.457 1.59-3.968 4.464-4.447 5.726-4.447 2.54 0 5.274 1.621 5.274 5.181 0 4.069-5.136 8.625-11 14.402z"
+        />
+      </svg>
+      <span class="header__donate-text">{{ 'header.donate' | translate }}</span>
+    </a>
+  </div>
+</aside>

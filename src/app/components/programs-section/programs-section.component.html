@@ -1,0 +1,45 @@
+<section class="programs-section">
+  <div class="max-w-screen-3xl mx-auto lg:px-desktop px-mobile">
+    <div class="programs-section__head">
+      <div class="programs-section__titles">
+        <span class="programs-section__label">{{ 'programs.label' | translate }}</span>
+        <h2 class="programs-section__title">{{ 'programs.title' | translate }}</h2>
+      </div>
+      <a routerLink="/programs" class="programs-section__view-all">
+        {{ 'programs.allPrograms' | translate }}
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          width="16"
+          height="16"
+        >
+          <polyline points="9 18 15 12 9 6" />
+        </svg>
+      </a>
+    </div>
+
+    <div class="programs-section__grid">
+      @for (program of programs; track program.id) {
+        <a
+          [routerLink]="['/programs', program.id]"
+          class="prog-card"
+          [style.--color]="program.color"
+        >
+          <div class="prog-card__media">
+            <img [src]="program.image" alt="" class="prog-card__img" loading="lazy" />
+            <span class="prog-card__icon"><i [class]="program.icon" aria-hidden="true"></i></span>
+          </div>
+          <div class="prog-card__body">
+            <h3 class="prog-card__title">{{ program.key + '.title' | translate }}</h3>
+            <p class="prog-card__desc">{{ program.key + '.desc' | translate }}</p>
+            <span class="prog-card__more">{{ 'programs.learnMore' | translate }}</span>
+          </div>
+        </a>
+      }
+    </div>
+  </div>
+</section>

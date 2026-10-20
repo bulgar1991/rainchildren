@@ -1,0 +1,221 @@
+<!-- ══════════════════════════════════════════════════════
+     HERO
+══════════════════════════════════════════════════════ -->
+<section class="about-hero">
+  <img src="assets/images/about/about-us.jpg" alt="" class="about-hero__bg" />
+  <div class="about-hero__overlay"></div>
+  <div class="about-hero__inner w-full max-w-screen-3xl mx-auto lg:px-desktop px-mobile">
+    <nav class="about-hero__breadcrumb">
+      <a routerLink="/" class="about-hero__breadcrumb-link">{{ 'header.nav.home' | translate }}</a>
+      <span class="about-hero__breadcrumb-sep">/</span>
+      <span>{{ 'header.nav.about' | translate }}</span>
+    </nav>
+    <span class="about-hero__label">{{ 'about.hero.label' | translate }}</span>
+    <h1 class="about-hero__title">{{ 'about.hero.title' | translate }}</h1>
+    <p class="about-hero__subtitle">{{ 'about.hero.subtitle' | translate }}</p>
+    <div class="about-hero__actions">
+      <a routerLink="/programs" class="about-hero__btn about-hero__btn--primary">
+        {{ 'about.hero.ctaPrimary' | translate }}
+      </a>
+      <a routerLink="/contact" class="about-hero__btn about-hero__btn--secondary">
+        {{ 'about.hero.ctaSecondary' | translate }}
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════
+     MISSION
+══════════════════════════════════════════════════════ -->
+<section class="about-mission">
+  <div class="about-mission__inner max-w-screen-3xl mx-auto lg:px-desktop px-mobile">
+    <div class="about-mission__image-wrap">
+      <img src="assets/images/about/about-mission.jpg" alt="" class="about-mission__img" />
+      <div class="about-mission__badge">
+        <span class="about-mission__badge-num">{{ yearsActive }}</span>
+        <span class="about-mission__badge-text">{{ 'about.mission.badgeText' | translate }}</span>
+      </div>
+    </div>
+
+    <div class="about-mission__content">
+      <span class="section-label">{{ 'about.mission.label' | translate }}</span>
+      <h2 class="about-mission__title">{{ 'about.mission.title' | translate }}</h2>
+      <p class="about-mission__desc">{{ 'about.mission.desc' | translate }}</p>
+      <ul class="about-mission__features">
+        @for (i of [1, 2, 3]; track i) {
+          <li class="about-mission__feature">
+            <span class="about-mission__feature-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                width="14"
+                height="14"
+              >
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+            </span>
+            {{ 'about.mission.feature' + i | translate }}
+          </li>
+        }
+      </ul>
+      <a routerLink="/programs" class="about-mission__link">
+        {{ 'about.mission.link' | translate }}
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          width="16"
+          height="16"
+        >
+          <line x1="5" y1="12" x2="19" y2="12" />
+          <polyline points="12 5 19 12 12 19" />
+        </svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════
+     VALUES
+══════════════════════════════════════════════════════ -->
+<section class="about-values">
+  <div class="about-values__inner max-w-screen-3xl mx-auto lg:px-desktop px-mobile">
+    <div class="about-values__head">
+      <span class="section-label">{{ 'about.values.label' | translate }}</span>
+      <h2 class="about-values__title">{{ 'about.values.title' | translate }}</h2>
+    </div>
+    <div class="about-values__grid">
+      @for (v of values; track v.titleKey) {
+        <div class="value-card">
+          <div class="value-card__icon" [style.--c]="v.color" [innerHTML]="v.icon"></div>
+          <h3 class="value-card__title">{{ v.titleKey | translate }}</h3>
+          <p class="value-card__desc">{{ v.descKey | translate }}</p>
+        </div>
+      }
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════
+     STORY / TIMELINE
+══════════════════════════════════════════════════════ -->
+<section class="about-story">
+  <div class="about-story__inner max-w-screen-3xl mx-auto lg:px-desktop px-mobile">
+    <div class="about-story__head">
+      <span class="section-label">{{ 'about.story.label' | translate }}</span>
+      <h2 class="about-story__title">{{ 'about.story.title' | translate }}</h2>
+    </div>
+
+    <div class="about-story__image-wrap">
+      <img src="assets/images/about-story.jpg" alt="" class="about-story__img" />
+    </div>
+
+    <div class="about-story__timeline">
+      @for (m of milestones; track m.year; let last = $last) {
+        <div class="timeline-item" [class.timeline-item--last]="last">
+          <div class="timeline-item__dot"></div>
+          <div class="timeline-item__year">{{ m.year | translate }}</div>
+          <div class="timeline-item__body">
+            <h4 class="timeline-item__title">{{ m.titleKey | translate }}</h4>
+            <p class="timeline-item__desc">{{ m.descKey | translate }}</p>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════
+     TEAM
+══════════════════════════════════════════════════════ -->
+<section class="about-team">
+  <div class="about-team__inner max-w-screen-3xl mx-auto lg:px-desktop px-mobile">
+    <div class="about-team__head">
+      <span class="section-label">{{ 'about.team.label' | translate }}</span>
+      <h2 class="about-team__title">{{ 'about.team.title' | translate }}</h2>
+      <p class="about-team__subtitle">{{ 'about.team.subtitle' | translate }}</p>
+    </div>
+    <div class="about-team__grid">
+      @for (member of team; track member.nameKey) {
+        <div class="team-card">
+          <div class="team-card__photo-wrap">
+            @if (member.image) {
+              <img
+                [src]="member.image"
+                [alt]="member.nameKey | translate"
+                class="team-card__photo"
+              />
+            } @else {
+              <div class="team-card__photo team-card__photo--initials" aria-hidden="true">
+                {{ member.initials }}
+              </div>
+            }
+            <div class="team-card__socials">
+              @if (member.fb) {
+                <a
+                  [href]="member.fb"
+                  target="_blank"
+                  rel="noopener"
+                  class="team-card__social"
+                  aria-label="Facebook"
+                >
+                  <i class="icon-facebook" aria-hidden="true"></i>
+                </a>
+              }
+              @if (member.ig) {
+                <a
+                  [href]="member.ig"
+                  target="_blank"
+                  rel="noopener"
+                  class="team-card__social"
+                  aria-label="Instagram"
+                >
+                  <i class="icon-instagram" aria-hidden="true"></i>
+                </a>
+              }
+            </div>
+          </div>
+          <div class="team-card__info">
+            <h4 class="team-card__name">{{ member.nameKey | translate }}</h4>
+            <span class="team-card__role">{{ member.roleKey | translate }}</span>
+          </div>
+        </div>
+      }
+    </div>
+    <div class="about-team__cta">
+      <p>{{ 'about.team.joinText' | translate }}</p>
+      <a routerLink="/contact" class="about-team__btn">{{ 'about.team.joinBtn' | translate }}</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════
+     BLOG
+══════════════════════════════════════════════════════ -->
+
+<!-- ══════════════════════════════════════════════════════
+     PARTNERS
+══════════════════════════════════════════════════════ -->
+<section class="about-partners">
+  <div class="about-partners__inner max-w-screen-3xl mx-auto lg:px-desktop px-mobile">
+    <span class="section-label">{{ 'about.partners.label' | translate }}</span>
+    <h2 class="about-partners__title">{{ 'about.partners.title' | translate }}</h2>
+    <div class="about-partners__grid">
+      @for (p of partners; track p) {
+        <div class="partner-card">{{ p }}</div>
+      }
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════
+     CTA BANNER
+══════════════════════════════════════════════════════ -->
+<app-volunteer-banner />

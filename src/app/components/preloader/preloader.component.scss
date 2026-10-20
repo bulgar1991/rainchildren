@@ -1,0 +1,131 @@
+$primary: #5b8af0;
+$text: #1a2540;
+
+// ─── Full-screen preloader ────────────────────────────────────────────────────
+.preloader {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  visibility: visible;
+  transition:
+    opacity 0.45s ease,
+    visibility 0.45s ease;
+
+  &--out {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
+  &__logo {
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 8px 32px rgba(91, 138, 240, 0.2);
+    animation: logo-pulse 2s ease-in-out infinite;
+  }
+
+  &__name {
+    font-size: 20px;
+    font-weight: 500;
+    color: $text;
+    letter-spacing: -0.3px;
+    margin: 0;
+
+    strong {
+      font-weight: 800;
+      color: $primary;
+    }
+  }
+
+  &__dots {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    margin-top: 4px;
+
+    span {
+      display: block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: $primary;
+      animation: dot-bounce 1.3s ease-in-out infinite both;
+
+      &:nth-child(1) {
+        animation-delay: -0.26s;
+      }
+      &:nth-child(2) {
+        animation-delay: -0.13s;
+      }
+      &:nth-child(3) {
+        animation-delay: 0s;
+      }
+    }
+  }
+}
+
+@keyframes logo-pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.06);
+  }
+}
+
+@keyframes dot-bounce {
+  0%,
+  80%,
+  100% {
+    transform: translateY(0) scale(0.6);
+    opacity: 0.4;
+  }
+  40% {
+    transform: translateY(-8px) scale(1);
+    opacity: 1;
+  }
+}
+
+// ─── Route transition bar ─────────────────────────────────────────────────────
+.route-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background: $primary;
+  z-index: 9998;
+  pointer-events: none;
+  transform: scaleX(0);
+  transform-origin: left center;
+  opacity: 0;
+
+  &--active {
+    opacity: 1;
+    animation: route-fill 8s cubic-bezier(0.1, 0.4, 0.5, 1) forwards;
+  }
+}
+
+@keyframes route-fill {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(0.88);
+  }
+}

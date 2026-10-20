@@ -1,0 +1,195 @@
+@use '@angular/material' as mat;
+
+$primary: #5b8af0;
+$text: #1a2540;
+$muted: #64748b;
+$bg: #f7f9fc;
+$border: #e8edf5;
+
+.faq {
+  padding-block: 80px;
+  background: $bg;
+
+  @media (max-width: 768px) {
+    padding-block: 56px;
+  }
+
+  &__inner {
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    gap: 64px;
+    align-items: start;
+
+    @media (max-width: 1024px) {
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+  }
+
+  // ── Left ───────────────────────────────────────────────────────────────────
+  &__left {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    position: sticky;
+    top: 104px;
+
+    @media (max-width: 1024px) {
+      position: static;
+    }
+  }
+
+  &__label {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    color: $primary;
+    background: rgba(91, 138, 240, 0.1);
+    padding: 5px 12px;
+    border-radius: 6px;
+    align-self: flex-start;
+  }
+
+  &__title {
+    font-size: clamp(24px, 2.6vw, 36px);
+    font-weight: 800;
+    color: $text;
+    line-height: 1.2;
+    letter-spacing: -0.4px;
+    margin: 0;
+  }
+
+  &__subtitle {
+    font-size: clamp(14px, 1.05vw, 16px);
+    color: $muted;
+    line-height: 1.75;
+    margin: 0;
+  }
+
+  &__image-wrap {
+    margin-top: 8px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 12px 40px rgba(15, 30, 61, 0.12);
+  }
+
+  &__image {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    display: block;
+  }
+
+  // ── Right — accordion ──────────────────────────────────────────────────────
+  &__right {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__panel {
+    border-radius: 14px !important;
+    border: 1.5px solid $border !important;
+    box-shadow: none !important;
+    background: #fff !important;
+    overflow: hidden;
+
+    // Header
+    .mat-expansion-panel-header {
+      padding: 0 22px;
+      height: auto !important;
+      min-height: 62px;
+      font-size: 15px;
+      font-weight: 700;
+      color: $text;
+      font-family: inherit;
+    }
+
+    mat-panel-title {
+      font-size: 15px;
+      font-weight: 700;
+      color: $text;
+      font-family: inherit;
+      line-height: 1.4;
+    }
+
+    // Expand icon colour
+    .mat-expansion-indicator::after {
+      color: $muted;
+    }
+
+    &.mat-expanded {
+      border-color: rgba(91, 138, 240, 0.3) !important;
+      box-shadow: 0 4px 20px rgba(91, 138, 240, 0.08) !important;
+
+      .mat-expansion-indicator::after {
+        color: $primary;
+      }
+    }
+
+    // Body
+    .mat-expansion-panel-body {
+      padding: 0 22px 20px;
+    }
+  }
+
+  &__answer {
+    font-size: 14.5px;
+    color: $muted;
+    line-height: 1.75;
+    margin: 0;
+  }
+
+  // ── Training places (map links) ────────────────────────────────────────────
+  &__places {
+    list-style: none;
+    margin: 14px 0 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  &__place {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 6px 16px;
+    padding: 10px 14px;
+    border-radius: 12px;
+    background: rgba(91, 138, 240, 0.07);
+  }
+
+  &__place-name {
+    font-size: 14px;
+    font-weight: 600;
+    color: $text;
+  }
+
+  &__place-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13.5px;
+    font-weight: 700;
+    color: $primary;
+    text-decoration: none;
+    white-space: nowrap;
+
+    svg {
+      transition: transform 0.25s ease;
+    }
+
+    &:hover svg {
+      transform: translateY(-2px);
+    }
+  }
+}

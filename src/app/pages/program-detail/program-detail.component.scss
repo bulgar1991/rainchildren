@@ -1,0 +1,16 @@
+@use '../shared-detail';
+
+// Program-coloured icon above the title in the photo banner.
+.detail-hero__icon {
+  align-self: flex-start;
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  color: #fff;
+  background: var(--c);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
+}

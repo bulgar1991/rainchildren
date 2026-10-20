@@ -1,0 +1,64 @@
+<section class="banner-slider">
+  <div class="swiper" #swiperEl>
+    <div class="swiper-wrapper">
+      @for (slide of slides; track slide.titleKey) {
+        <div class="swiper-slide">
+          <div class="banner">
+            <!-- Image as background element -->
+            <img [src]="slide.image" [alt]="slide.titleKey | translate" class="banner__bg" />
+
+            <!-- Dark gradient overlay -->
+            <div class="banner__overlay"></div>
+
+            <!-- Content on top -->
+            <div class="banner__inner max-w-screen-3xl mx-auto">
+              <div class="banner__content">
+                <h1 class="banner__title">{{ slide.titleKey | translate }}</h1>
+                <p class="banner__desc">{{ slide.descKey | translate }}</p>
+                <div class="banner__actions">
+                  <a [routerLink]="slide.primaryLink" class="banner__btn banner__btn--primary">
+                    {{ slide.primaryKey | translate }}
+                  </a>
+                  <a [routerLink]="slide.secondaryLink" class="banner__btn banner__btn--secondary">
+                    {{ slide.secondaryKey | translate }}
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      }
+    </div>
+
+    <div class="banner-slider__pagination swiper-pagination"></div>
+
+    <button class="banner-slider__arrow banner-slider__arrow--prev" aria-label="Previous slide">
+      <svg
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        width="22"
+        height="22"
+      >
+        <polyline points="15 18 9 12 15 6" />
+      </svg>
+    </button>
+    <button class="banner-slider__arrow banner-slider__arrow--next" aria-label="Next slide">
+      <svg
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        width="22"
+        height="22"
+      >
+        <polyline points="9 18 15 12 9 6" />
+      </svg>
+    </button>
+  </div>
+</section>

@@ -1,0 +1,28 @@
+<section class="sport-showcase">
+  <div class="sport-showcase__inner max-w-screen-3xl mx-auto lg:px-desktop px-mobile">
+    <div class="sport-showcase__head">
+      <span class="sport-showcase__label">{{ 'showcase.label' | translate }}</span>
+      <h2 class="sport-showcase__title">{{ 'showcase.title' | translate }}</h2>
+    </div>
+
+    <div class="sport-showcase__grid">
+      @for (program of programs; track program.id) {
+        <a
+          [routerLink]="['/programs', program.id]"
+          class="sport-showcase__card"
+          [style.--c]="program.color"
+        >
+          @if (program.video; as video) {
+            <app-sport-video [clip]="video" [label]="program.key + '.title' | translate" />
+          } @else {
+            <app-sport-scene [sport]="program.scene!" />
+          }
+          <span class="sport-showcase__caption">
+            <i [class]="program.icon" aria-hidden="true"></i>
+            {{ 'showcase.' + program.scene | translate }}
+          </span>
+        </a>
+      }
+    </div>
+  </div>
+</section>

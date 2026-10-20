@@ -1,0 +1,9 @@
+{
+  "inputDir": "./src/assets/icons/font-icons",
+  "outputDir": "./src/assets/fonts",
+  "name": "icons",
+  "prefix": "icon",
+  "fontTypes": ["woff2", "woff"],
+  "assetTypes": ["css", "json"],
+  "normalize": true
+}

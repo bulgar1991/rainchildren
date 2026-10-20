@@ -1,0 +1,285 @@
+@use '../shared-hero';
+
+$text: #1a2540;
+$muted: #64748b;
+$primary: #5b8af0;
+$green: #34d399;
+$border: #e8edf5;
+$ease: cubic-bezier(0.22, 1, 0.36, 1);
+$t: 0.3s;
+
+.donate {
+  padding-block: 72px 96px;
+  background: #f8fafd;
+
+  @media (max-width: 768px) {
+    padding-block: 48px 64px;
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  &__intro {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 680px;
+  }
+
+  &__label {
+    align-self: flex-start;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    color: $primary;
+    background: rgba(91, 138, 240, 0.1);
+    padding: 5px 12px;
+    border-radius: 6px;
+  }
+
+  &__title {
+    font-size: clamp(22px, 2.4vw, 32px);
+    font-weight: 800;
+    color: $text;
+    margin: 0;
+  }
+
+  &__desc {
+    font-size: 15.5px;
+    line-height: 1.75;
+    color: $muted;
+    margin: 0;
+  }
+
+  &__accounts {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+
+    @media (max-width: 900px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__purpose {
+    margin: 0;
+    padding: 16px 20px;
+    border-radius: 14px;
+    border: 1.5px dashed rgba(91, 138, 240, 0.4);
+    background: #fff;
+    font-size: 15px;
+    color: $text;
+  }
+
+  &__help {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 28px 32px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #0f1e3d 0%, #162a52 100%);
+    color: #fff;
+
+    @media (max-width: 640px) {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 24px;
+    }
+  }
+
+  &__help-title {
+    margin: 0 0 6px;
+    font-size: 20px;
+    font-weight: 800;
+  }
+
+  &__help-desc {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 15px;
+  }
+
+  &__help-btn {
+    flex-shrink: 0;
+    padding: 13px 28px;
+    border-radius: 999px;
+    background: #fff;
+    color: $text;
+    font-weight: 700;
+    font-size: 15px;
+    text-decoration: none;
+    transition: transform $t $ease;
+
+    &:hover {
+      transform: translateY(-2px);
+    }
+  }
+}
+
+// ── Account card ─────────────────────────────────────────────────────────────
+.account {
+  --c: #{$primary};
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 28px;
+  border-radius: 20px;
+  border: 1.5px solid $border;
+  background: #fff;
+
+  @media (max-width: 480px) {
+    padding: 20px;
+  }
+
+  &--usd {
+    --c: #{$green};
+  }
+
+  &__head {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+
+  &__currency {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 56px;
+    height: 40px;
+    padding-inline: 10px;
+    border-radius: 12px;
+    background: var(--c);
+    color: #fff;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+  }
+
+  &__title {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 800;
+    color: $text;
+  }
+
+  &__rows {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__row {
+    display: grid;
+    grid-template-columns: 110px minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 12px;
+    min-height: 48px;
+    padding-block: 8px;
+    border-bottom: 1px solid $border;
+
+    &:last-child {
+      border-bottom: 0;
+    }
+
+    @media (max-width: 480px) {
+      grid-template-columns: minmax(0, 1fr) auto;
+
+      .account__label {
+        grid-column: 1 / -1;
+      }
+    }
+
+    &--iban .account__value {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: 0.3px;
+    }
+  }
+
+  &__label {
+    font-size: 13px;
+    font-weight: 600;
+    color: $muted;
+  }
+
+  &__value {
+    margin: 0;
+    font-size: 15px;
+    font-weight: 600;
+    color: $text;
+    overflow-wrap: anywhere;
+    user-select: all;
+  }
+
+  &__copy {
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+    border: 1.5px solid $border;
+    background: #fff;
+    color: $muted;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition:
+      transform $t $ease,
+      color $t $ease;
+
+    &:hover {
+      color: var(--c);
+      transform: scale(1.08);
+    }
+
+    &:active {
+      transform: scale(0.94);
+    }
+
+    &--done {
+      color: #fff;
+      background: var(--c);
+      border-color: var(--c);
+    }
+  }
+
+  &__copy-all {
+    align-self: flex-start;
+    padding: 12px 24px;
+    border-radius: 999px;
+    border: 0;
+    background: var(--c);
+    color: #fff;
+    font-size: 14.5px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform $t $ease;
+
+    &:hover {
+      transform: translateY(-2px);
+    }
+
+    &:active {
+      transform: translateY(0) scale(0.97);
+    }
+  }
+
+  &__copy:focus-visible,
+  &__copy-all:focus-visible {
+    outline: 3px solid var(--c);
+    outline-offset: 2px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .account *,
+  .donate__help-btn {
+    transition: none !important;
+  }
+}

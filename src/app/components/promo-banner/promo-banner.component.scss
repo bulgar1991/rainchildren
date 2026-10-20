@@ -1,0 +1,132 @@
+$primary: #5b8af0;
+$accent: #ffb547;
+$navy: #0f1e3d;
+$text: #1a2540;
+$muted: #64748b;
+$ease: cubic-bezier(0.4, 0, 0.2, 1);
+$t: 0.25s;
+
+.promo-banner {
+  padding-block: 80px;
+  background: #f7f9fc;
+
+  @media (max-width: 768px) {
+    padding-block: 56px;
+  }
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    gap: 64px;
+
+    @media (max-width: 1024px) {
+      gap: 40px;
+    }
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      gap: 32px;
+    }
+  }
+
+  // ── Image ──────────────────────────────────────────────────────────────────
+  &__image-wrap {
+    flex: 0 0 46%;
+    min-width: 0;
+    border-radius: 20px;
+    overflow: hidden;
+
+    @media (max-width: 768px) {
+      flex: unset;
+      width: 100%;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    display: block;
+  }
+
+  // ── Content ────────────────────────────────────────────────────────────────
+  &__content {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__label {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    color: $primary;
+    background: rgba(91, 138, 240, 0.1);
+    padding: 5px 12px;
+    border-radius: 6px;
+    align-self: flex-start;
+  }
+
+  &__title {
+    font-size: clamp(22px, 2.8vw, 36px);
+    font-weight: 800;
+    color: $text;
+    line-height: 1.2;
+    letter-spacing: -0.4px;
+    margin: 0;
+  }
+
+  &__desc {
+    font-size: clamp(14px, 1.1vw, 17px);
+    color: $muted;
+    line-height: 1.75;
+    margin: 0;
+  }
+
+  &__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 8px;
+  }
+
+  &__btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 13px 28px;
+    border-radius: 12px;
+    font-size: 14.5px;
+    font-weight: 700;
+    text-decoration: none;
+    transition:
+      box-shadow $t $ease,
+      transform $t $ease;
+
+    &--primary {
+      background: $accent;
+      color: #fff;
+      box-shadow: 0 4px 16px rgba(255, 181, 71, 0.35);
+
+      &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 24px rgba(255, 181, 71, 0.45);
+      }
+    }
+
+    &--secondary {
+      background: #fff;
+      color: $text;
+      border: 1.5px solid #e8edf5;
+
+      &:hover {
+        border-color: $primary;
+        color: $primary;
+        transform: translateY(-2px);
+      }
+    }
+  }
+}

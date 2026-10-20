@@ -1,0 +1,102 @@
+$text: #1a2540;
+$primary: #5b8af0;
+$border: #e8edf5;
+$ease: cubic-bezier(0.22, 1, 0.36, 1);
+
+.sport-showcase {
+  padding-block: 24px 80px;
+  background: #fff;
+
+  @media (max-width: 768px) {
+    padding-block: 8px 56px;
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  &__head {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+    text-align: center;
+  }
+
+  &__label {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    color: $primary;
+    background: rgba(91, 138, 240, 0.1);
+    padding: 5px 12px;
+    border-radius: 6px;
+  }
+
+  &__title {
+    font-size: clamp(22px, 2.4vw, 32px);
+    font-weight: 800;
+    color: $text;
+    margin: 0;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+
+    @media (max-width: 1024px) {
+      gap: 16px;
+    }
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 20px 20px 22px;
+    border-radius: 20px;
+    border: 1.5px solid $border;
+    background: linear-gradient(180deg, #f8fafd 0%, #fff 100%);
+    text-decoration: none;
+    transition: transform 0.4s $ease;
+
+    @media (hover: hover) {
+      &:hover {
+        transform: translateY(-4px);
+      }
+    }
+
+    &:focus-visible {
+      outline: 3px solid var(--c);
+      outline-offset: 3px;
+    }
+  }
+
+  &__caption {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 16px;
+    font-weight: 800;
+    color: var(--c);
+
+    i {
+      font-size: 20px;
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sport-showcase__card {
+    transition: none;
+  }
+}

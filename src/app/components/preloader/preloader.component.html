@@ -1,0 +1,15 @@
+<!-- Full-screen initial page loader -->
+<div class="preloader" [class.preloader--out]="!preloader.pageLoading()">
+  <div class="preloader__body">
+    <img src="assets/images/site-logo.jpg" alt="Rain Children" class="preloader__logo" />
+    <p class="preloader__name">Rain <strong>Children</strong></p>
+    <div class="preloader__dots">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+</div>
+
+<!-- Route transition bar -->
+<div class="route-bar" [class.route-bar--active]="preloader.routeLoading()"></div>

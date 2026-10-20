@@ -1,0 +1,112 @@
+<section class="page-hero page-hero--photo" style="--pos: 70% 40%">
+  <!-- The kids stand right of centre; keep them in frame on narrow screens. -->
+  <img src="assets/images/donate/donate-banner.jpg" alt="" class="page-hero__bg" />
+  <div class="page-hero__overlay"></div>
+  <div class="page-hero__inner max-w-screen-3xl mx-auto lg:px-desktop px-mobile">
+    <nav class="page-hero__breadcrumb">
+      <a routerLink="/" class="page-hero__bc-link">{{ 'header.nav.home' | translate }}</a>
+      <span>/</span>
+      <span>{{ 'donate.page.title' | translate }}</span>
+    </nav>
+    <h1 class="page-hero__title">{{ 'donate.page.title' | translate }}</h1>
+    <p class="page-hero__sub">{{ 'donate.page.subtitle' | translate }}</p>
+  </div>
+</section>
+
+<section class="donate">
+  <div class="donate__inner max-w-screen-3xl mx-auto lg:px-desktop px-mobile">
+    <div class="donate__intro">
+      <span class="donate__label">{{ 'donate.bank.label' | translate }}</span>
+      <h2 class="donate__title">{{ 'donate.bank.title' | translate }}</h2>
+      <p class="donate__desc">{{ 'donate.bank.desc' | translate }}</p>
+    </div>
+
+    <div class="donate__accounts">
+      @for (account of accounts; track account.currency) {
+        <article class="account" [class.account--usd]="account.currency === 'USD'">
+          <header class="account__head">
+            <span class="account__currency">{{ account.currency }}</span>
+            <h3 class="account__title">
+              {{ 'donate.accounts.' + account.currency | translate }}
+            </h3>
+          </header>
+
+          <dl class="account__rows">
+            @for (field of fields; track field) {
+              <div class="account__row" [class.account__row--iban]="field === 'iban'">
+                <dt class="account__label">{{ 'donate.fields.' + field | translate }}</dt>
+                <dd class="account__value">{{ display(account, field) }}</dd>
+                <button
+                  type="button"
+                  class="account__copy"
+                  [class.account__copy--done]="copied() === account.currency + '-' + field"
+                  (click)="copyField(account, field)"
+                  [attr.aria-label]="
+                    ('donate.copy' | translate) + ': ' + ('donate.fields.' + field | translate)
+                  "
+                >
+                  @if (copied() === account.currency + '-' + field) {
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      width="16"
+                      height="16"
+                    >
+                      <polyline points="20 6 9 17 4 12" />
+                    </svg>
+                  } @else {
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      width="16"
+                      height="16"
+                    >
+                      <rect x="9" y="9" width="13" height="13" rx="2" ry="2" />
+                      <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" />
+                    </svg>
+                  }
+                </button>
+              </div>
+            }
+            <div class="account__row">
+              <dt class="account__label">{{ 'donate.fields.currency' | translate }}</dt>
+              <dd class="account__value">{{ account.currency }}</dd>
+            </div>
+          </dl>
+
+          <button type="button" class="account__copy-all" (click)="copyAll(account)">
+            {{
+              (copied() === account.currency + '-all' ? 'donate.copied' : 'donate.copyAll')
+                | translate
+            }}
+          </button>
+        </article>
+      }
+    </div>
+
+    <!-- Announces "Copied!" to screen readers. -->
+    <p class="sr-only" aria-live="polite">
+      @if (copied()) {
+        {{ 'donate.copied' | translate }}
+      }
+    </p>
+
+    <p class="donate__purpose">{{ 'donate.purpose' | translate }}</p>
+
+    <div class="donate__help">
+      <div>
+        <h3 class="donate__help-title">{{ 'donate.help.title' | translate }}</h3>
+        <p class="donate__help-desc">{{ 'donate.help.desc' | translate }}</p>
+      </div>
+      <a routerLink="/contact" class="donate__help-btn">{{ 'donate.help.btn' | translate }}</a>
+    </div>
+  </div>
+</section>

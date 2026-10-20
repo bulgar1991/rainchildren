@@ -1,0 +1,63 @@
+<section class="faq">
+  <div class="faq__inner max-w-screen-3xl mx-auto lg:px-desktop px-mobile">
+    <!-- Left column -->
+    <div class="faq__left">
+      <span class="faq__label">{{ 'faq.label' | translate }}</span>
+      <h2 class="faq__title">{{ 'faq.title' | translate }}</h2>
+      <p class="faq__subtitle">{{ 'faq.subtitle' | translate }}</p>
+      <div class="faq__image-wrap">
+        <img
+          src="assets/images/faq-image.jpg"
+          [alt]="'faq.imageAlt' | translate"
+          class="faq__image"
+          loading="lazy"
+        />
+      </div>
+    </div>
+
+    <!-- Right column — Material accordion -->
+    <div class="faq__right">
+      <mat-accordion [multi]="false" class="faq__accordion">
+        @for (item of items; track item.questionKey) {
+          <mat-expansion-panel class="faq__panel">
+            <mat-expansion-panel-header>
+              <mat-panel-title>{{ item.questionKey | translate }}</mat-panel-title>
+            </mat-expansion-panel-header>
+            <p class="faq__answer">{{ item.answerKey | translate }}</p>
+            @if (item.showPlaces) {
+              <ul class="faq__places">
+                @for (place of places; track place.id) {
+                  <li class="faq__place">
+                    <span class="faq__place-name">{{ place.nameKey | translate }}</span>
+                    <a
+                      [href]="place.mapUrl"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="faq__place-link"
+                    >
+                      <svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        width="15"
+                        height="15"
+                        aria-hidden="true"
+                      >
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                        <circle cx="12" cy="10" r="3" />
+                      </svg>
+                      {{ 'faq.places.map' | translate }}
+                    </a>
+                  </li>
+                }
+              </ul>
+            }
+          </mat-expansion-panel>
+        }
+      </mat-accordion>
+    </div>
+  </div>
+</section>

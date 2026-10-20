@@ -1,0 +1,5 @@
+# Allow all crawlers. Update the domain if it changes (also in src/app/config/site.ts).
+User-agent: *
+Allow: /
+
+Sitemap: https://rainchildren.md/sitemap.xml

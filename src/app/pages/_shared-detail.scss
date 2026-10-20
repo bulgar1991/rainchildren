@@ -1,0 +1,145 @@
+// Layout of the /programs/:id pages.
+@use 'shared-hero';
+
+$text: #1a2540;
+$muted: #64748b;
+$border: #e8edf5;
+
+.detail {
+  padding-block: 64px 96px;
+  background: #fff;
+  @media (max-width: 768px) {
+    padding-block: 40px 64px;
+  }
+
+  &__inner {
+    max-width: 860px;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+  }
+
+  &__image-wrap {
+    position: relative;
+  }
+
+  &__img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    border-radius: 24px;
+    display: block;
+    background: #f1f5fb;
+    box-shadow: 0 20px 56px rgba(15, 30, 61, 0.12);
+  }
+
+  &__badge {
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    padding: 6px 14px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #fff;
+    background: var(--c, #{shared-hero.$primary});
+  }
+
+  &__meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 28px;
+    font-size: 14px;
+    font-weight: 600;
+    color: $muted;
+  }
+
+  &__meta-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  &__scene {
+    max-width: 560px;
+    width: 100%;
+    margin-inline: auto;
+  }
+
+  &__lead {
+    font-size: clamp(16px, 1.3vw, 19px);
+    line-height: 1.8;
+    color: $text;
+    margin: 0;
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 1.85;
+    color: $muted;
+    margin: 0;
+  }
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  &__list-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 15px;
+    color: $text;
+  }
+
+  &__check {
+    width: 26px;
+    height: 26px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--c);
+    background: color-mix(in srgb, var(--c) 14%, transparent);
+  }
+
+  &__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    padding-top: 12px;
+    border-top: 1px solid $border;
+  }
+
+  &__btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 13px 28px;
+    border-radius: 999px;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+    transition:
+      transform 0.2s,
+      box-shadow 0.2s;
+    color: #fff;
+    background: var(--c, #{shared-hero.$primary});
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 24px rgba(15, 30, 61, 0.18);
+    }
+
+    &--outline {
+      color: $text;
+      background: transparent;
+      border: 1.5px solid $border;
+    }
+  }
+}

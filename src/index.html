@@ -1,13 +1,105 @@
 <!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Rainchildren</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-</head>
-<body>
-  <app-root></app-root>
-</body>
+<html lang="ro">
+  <head>
+    <meta charset="utf-8" />
+    <title>Rain Children — Împreună pentru fiecare copil special</title>
+    <base href="/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0f1e3d" />
+    <meta name="color-scheme" content="light" />
+
+    <!-- Icons (generated from assets/images/site-logo.jpg, see src/assets/icons/app) -->
+    <link href="favicon.ico" rel="icon" sizes="48x48" />
+    <link href="assets/icons/app/icon-32.png" rel="icon" type="image/png" sizes="32x32" />
+    <link href="assets/icons/app/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180" />
+    <link href="site.webmanifest" rel="manifest" />
+
+    <!-- Primary meta (fallback, overwritten by SeoService at runtime) -->
+    <meta
+      name="description"
+      content="Rain Children este o asociaţie obştească din Moldova care organizează antrenamente de fotbal, baschet şi gimnastică pentru copiii cu autism şi sindrom Down."
+    />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="author" content="Rain Children" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Rain Children" />
+    <meta property="og:locale" content="ro_RO" />
+    <meta property="og:locale:alternate" content="en_GB" />
+    <meta property="og:locale:alternate" content="ru_RU" />
+    <meta property="og:title" content="Rain Children — Împreună pentru fiecare copil special" />
+    <meta
+      property="og:description"
+      content="Rain Children este o asociaţie obştească din Moldova care organizează antrenamente de fotbal, baschet şi gimnastică pentru copiii cu autism şi sindrom Down."
+    />
+    <meta property="og:url" content="https://rainchildren.md/" />
+    <meta property="og:image" content="https://rainchildren.md/assets/images/seo/og-image.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Copiii Rain Children la antrenamentul de baschet" />
+
+    <!-- Twitter / X card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Rain Children — Împreună pentru fiecare copil special" />
+    <meta
+      name="twitter:description"
+      content="Rain Children este o asociaţie obştească din Moldova care organizează antrenamente de fotbal, baschet şi gimnastică pentru copiii cu autism şi sindrom Down."
+    />
+    <meta name="twitter:image" content="https://rainchildren.md/assets/images/seo/og-image.jpg" />
+    <meta name="twitter:image:alt" content="Copiii Rain Children la antrenamentul de baschet" />
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://rainchildren.md/" />
+
+    <!-- Structured data: tells search engines who runs the site. Keep in sync with
+         src/app/config/site.ts (incl. SOCIAL_LINKS) and src/app/config/donate.ts. Contact details: src/app/config/contact.ts.
+         Add "address" here once the real address is on the site. -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "NGO",
+            "@id": "https://rainchildren.md/#organization",
+            "name": "Rain Children",
+            "legalName": "Asociatia Obsteasca RAIN CHILDREN",
+            "url": "https://rainchildren.md/",
+            "logo": "https://rainchildren.md/assets/icons/app/icon-512.png",
+            "image": "https://rainchildren.md/assets/images/seo/og-image.jpg",
+            "description": "Rain Children este o asociaţie obştească din Moldova care organizează antrenamente de fotbal, baschet şi gimnastică pentru copiii cu autism şi sindrom Down.",
+            "foundingDate": "2020",
+            "telephone": "+37369396519",
+            "email": "rainchildren.md@mail.ru",
+            "sameAs": [
+              "https://www.facebook.com/rain.children.7",
+              "https://www.instagram.com/rain._children/"
+            ],
+            "taxID": "1020620005613",
+            "areaServed": { "@type": "Country", "name": "Moldova" },
+            "knowsLanguage": ["ro", "en", "ru"]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://rainchildren.md/#website",
+            "name": "Rain Children",
+            "url": "https://rainchildren.md/",
+            "inLanguage": ["ro", "en", "ru"],
+            "publisher": { "@id": "https://rainchildren.md/#organization" }
+          }
+        ]
+      }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <app-root></app-root>
+  </body>
 </html>
