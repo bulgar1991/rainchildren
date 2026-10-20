@@ -127,7 +127,7 @@
   "promoBanner": {
     "label": "Real support",
     "title": "Every donation changes a life",
-    "desc": "Your resources help us provide therapy, educational materials and moments of joy to children who need support the most. Join our mission.",
+    "desc": "Your donation helps us organise more basketball, football and gymnastics training for children with autism and Down syndrome. Join our mission.",
     "donate": "Donate now",
     "learnMore": "Learn more"
   },
@@ -135,18 +135,17 @@
     "hero": {
       "label": "Our story",
       "title": "Driven by love, guided by purpose",
-      "subtitle": "Since 2020 we have walked alongside children with autism and Down syndrome, their families and the communities that support them — turning compassion into real, lasting change.",
+      "subtitle": "Since 2020 we have been helping children with autism and Down syndrome integrate into society through basketball, football and gymnastics.",
       "ctaPrimary": "Our programs",
       "ctaSecondary": "Contact us"
     },
     "mission": {
       "label": "Who we are",
       "title": "A community built on empathy and dedication",
-      "desc": "Rain Children was born from the belief that every child, regardless of diagnosis, deserves a full and joyful life. We are a team of passionate volunteers, therapists and educators working together to make that belief a reality every single day.",
+      "desc": "Rain Children was born from the belief that every child, whatever their diagnosis, deserves to play sport and feel part of the community. Through basketball, football and gymnastics training we help children with autism and Down syndrome integrate into society.",
       "badgeText": "years of impact",
       "feature1": "Football, basketball and gymnastics training",
-      "feature2": "Personalised support for each child",
-      "feature3": "Family counseling and parent workshops",
+      "feature2": "Integration into society through sport and team play",
       "link": "Explore our programs"
     },
     "values": {
@@ -165,8 +164,8 @@
         "desc": "We build spaces where every child feels welcomed, valued and celebrated for exactly who they are."
       },
       "v4": {
-        "title": "Excellence in care",
-        "desc": "We continuously raise our standards to ensure the best possible outcomes for the children in our programs."
+        "title": "Sport for everyone",
+        "desc": "Any child can play, whatever their diagnosis. We adapt the training to each child’s pace."
       }
     },
     "story": {
@@ -174,39 +173,41 @@
       "label": "Our journey",
       "title": "How Rain Children came to be",
       "m1": {
-        "title": "The beginning",
-        "desc": "A small group of volunteers started meeting weekly to support two families with autistic children — with nothing but heart and determination."
+        "title": "The opening",
+        "desc": "Rain Children opened in 2020 with a simple goal: for children with autism and Down syndrome to play sport and integrate into society."
       },
       "m2": {
-        "title": "First centre opened",
-        "desc": "We opened our dedicated activity centre in Chișinău, offering structured programs to 40 children from the start."
-      },
-      "m3": {
-        "title": "National recognition",
-        "desc": "Rain Children received a national award for social impact, and our volunteer network grew to over 80 members across Moldova."
-      },
-      "m4": {
-        "title": "Growing stronger",
-        "desc": "Today we support over 1 200 children annually through football, basketball and gymnastics, with 150+ active volunteers and new partnerships forming every year."
+        "title": "Basketball, football and gymnastics",
+        "desc": "We train outdoors, and in winter once a week indoors. With your help we would like to train more often."
       }
     },
     "team": {
       "label": "The people behind it",
       "title": "Meet our team",
-      "subtitle": "Our core team brings together therapists, educators, social workers and passionate volunteers united by one mission.",
-      "m1": { "name": "Irina Haritonova", "role": "Director" },
-      "m2": { "name": "Igor Bulgar", "role": "Coach" },
+      "subtitle": "We do not have a team of specialists — each parent looks after their own child separately. We organise the basketball, football and gymnastics training.",
+      "m1": {
+        "name": "Irina Haritonova",
+        "role": "Director"
+      },
+      "m2": {
+        "name": "Igor Bulgar",
+        "role": "Coach"
+      },
       "joinText": "Want to be part of our team? We are always looking for dedicated volunteers.",
       "joinBtn": "Become a volunteer"
     },
     "partners": {
-      "label": "Who supports us",
-      "title": "Our trusted partners"
+      "label": "Partners",
+      "title": "We are looking for partners",
+      "desc": "We do not have any partners yet. If you represent a company or an organisation and would like to support us, get in touch.",
+      "cta": "Become a partner"
     }
   },
   "seo": {
     "imageAlt": "Rain Children kids at basketball training",
-    "detail": { "title": "{{name}} — Rain Children" },
+    "detail": {
+      "title": "{{name}} — Rain Children"
+    },
     "gallery": {
       "title": "Gallery — Rain Children",
       "description": "Photos from Rain Children football, basketball and gymnastics training, events and everyday activities with the kids."
@@ -242,7 +243,7 @@
     "back": "Back to home"
   },
   "footer": {
-    "about": "We are volunteers dedicated to supporting children with autism and Down syndrome through therapy, education and community.",
+    "about": "We are volunteers helping children with autism and Down syndrome integrate into society through basketball, football and gymnastics.",
     "nav": "Navigation",
     "programs": "Programs",
     "contact": "Contact",
@@ -263,15 +264,15 @@
     "title": "Frequently asked questions",
     "subtitle": "Everything you need to know about Rain Children — our mission, programs and how you can get involved.",
     "q1": "What is Rain Children and who does it help?",
-    "a1": "Rain Children is a volunteer organisation dedicated to supporting children with autism and Down syndrome. We provide therapeutic programs, educational activities and community events to help every child reach their full potential.",
+    "a1": "Rain Children is a non-profit association from Moldova, opened in 2020. We organise basketball, football and gymnastics training so that children with autism and Down syndrome can integrate into society.",
     "q2": "How can I become a volunteer?",
     "a2": "Simply visit our Contact page and fill in the volunteer form. No special skills are required — just a willingness to give your time and compassion. We will reach out to schedule an introductory meeting.",
     "q3": "Are your programs free for families?",
-    "a3": "Yes. All of our programs and services are provided free of charge to families. We are funded entirely through donations and grants, so every contribution goes directly to the children.",
+    "a3": "Yes. All of our training sessions are free of charge for families. We are supported by donations, so every contribution goes directly to the children.",
     "q4": "How can I donate and will I receive a receipt?",
     "a4": "You can donate through our Donate page using a bank transfer or online payment. After each donation you will receive an official receipt that can be used for tax purposes.",
     "q5": "Can organisations or schools partner with Rain Children?",
-    "a5": "Absolutely. We actively collaborate with schools, clinics and businesses. If you represent an organisation interested in partnering with us, please reach out via our Contact page and we will discuss the possibilities.",
+    "a5": "Yes! We do not have any partners yet and we are looking for them. If you represent a school, a company or an organisation, write to us through the Contact page.",
     "q6": "Where do your activities take place?",
     "a6": "Training takes place outdoors on two pitches: basketball at the “La Izvor” multi-purpose court and football at the FMF football pitch. In winter we train indoors once a week. In the future, with your help, we hope to train several times a week.",
     "places": {
@@ -316,7 +317,7 @@
   "volunteerBanner": {
     "label": "Join us",
     "title": "Become a volunteer and change lives",
-    "desc": "You don't need to be a specialist — you need a heart open to giving. Join hundreds of volunteers who dedicate their time to creating a better world for our children.",
+    "desc": "You do not need to be a specialist — just have an open heart. Join our volunteers at the training sessions and help the children feel part of the community.",
     "volunteer": "Become a volunteer",
     "programs": "See our programs"
   }

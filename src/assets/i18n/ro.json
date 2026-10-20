@@ -127,7 +127,7 @@
   "promoBanner": {
     "label": "Sprijin real",
     "title": "Fiecare donaţie schimbă o viaţă",
-    "desc": "Resursele tale ne ajută să oferim terapie, materiale educaţionale şi momente de bucurie copiilor care au cel mai mult nevoie de sprijin. Alătură-te misiunii noastre.",
+    "desc": "Donaţia ta ne ajută să organizăm mai multe antrenamente de baschet, fotbal şi gimnastică pentru copiii cu autism şi sindrom Down. Alătură-te misiunii noastre.",
     "donate": "Donează acum",
     "learnMore": "Află mai multe"
   },
@@ -135,18 +135,17 @@
     "hero": {
       "label": "Povestea noastră",
       "title": "Conduşi de iubire, ghidaţi de scop",
-      "subtitle": "Din 2020 mergem alături de copiii cu autism şi sindrom Down, familiile lor şi comunităţile care îi susţin — transformând compasiunea în schimbare reală şi durabilă.",
+      "subtitle": "Din 2020 îi ajutăm pe copiii cu autism şi sindrom Down să se integreze în societate prin baschet, fotbal şi gimnastică.",
       "ctaPrimary": "Programele noastre",
       "ctaSecondary": "Contactează-ne"
     },
     "mission": {
       "label": "Cine suntem",
       "title": "O comunitate construită pe empatie şi dedicare",
-      "desc": "Rain Children s-a născut din convingerea că fiecare copil, indiferent de diagnostic, merită o viaţă plină şi bucuroasă. Suntem o echipă de voluntari, terapeuţi şi educatori care lucrează zilnic pentru a transforma această convingere în realitate.",
+      "desc": "Rain Children s-a născut din convingerea că fiecare copil, indiferent de diagnostic, merită să facă sport şi să se simtă parte din comunitate. Prin antrenamente de baschet, fotbal şi gimnastică îi ajutăm pe copiii cu autism şi sindrom Down să se integreze în societate.",
       "badgeText": "ani de impact",
       "feature1": "Antrenamente de fotbal, baschet şi gimnastică",
-      "feature2": "Sprijin personalizat pentru fiecare copil",
-      "feature3": "Consiliere familială şi ateliere pentru părinţi",
+      "feature2": "Integrare în societate prin sport şi joc în echipă",
       "link": "Explorează programele noastre"
     },
     "values": {
@@ -165,8 +164,8 @@
         "desc": "Construim spaţii în care fiecare copil se simte binevenit, valorizat şi celebrat exact aşa cum este."
       },
       "v4": {
-        "title": "Excelenţă în îngrijire",
-        "desc": "Ne ridicăm continuu standardele pentru a asigura cele mai bune rezultate posibile copiilor din programele noastre."
+        "title": "Sport pentru fiecare",
+        "desc": "Orice copil poate juca, indiferent de diagnostic. Adaptăm antrenamentele la ritmul fiecăruia."
       }
     },
     "story": {
@@ -174,34 +173,34 @@
       "label": "Călătoria noastră",
       "title": "Cum a luat naştere Rain Children",
       "m1": {
-        "title": "Începuturile",
-        "desc": "Un grup mic de voluntari a început să se întâlnească săptămânal pentru a sprijini două familii cu copii cu autism — cu nimic altceva decât inimă şi determinare."
+        "title": "Deschiderea",
+        "desc": "În 2020 s-a deschis Rain Children, cu un scop simplu: copiii cu autism şi sindrom Down să facă sport şi să se integreze în societate."
       },
       "m2": {
-        "title": "Primul centru deschis",
-        "desc": "Am deschis centrul nostru dedicat din Chișinău, oferind programe structurate pentru 40 de copii de la bun început."
-      },
-      "m3": {
-        "title": "Recunoaştere naţională",
-        "desc": "Rain Children a primit un premiu naţional pentru impact social, iar reţeaua noastră de voluntari a crescut la peste 80 de membri în toată Moldova."
-      },
-      "m4": {
-        "title": "Continuăm să creştem",
-        "desc": "Astăzi sprijinim anual peste 1 200 de copii prin fotbal, baschet şi gimnastică, cu 150+ voluntari activi şi noi parteneriate în formare."
+        "title": "Baschet, fotbal şi gimnastică",
+        "desc": "Ne antrenăm în aer liber, iar iarna o dată pe săptămână în sală. Cu ajutorul vostru ne dorim să ne antrenăm mai des."
       }
     },
     "team": {
       "label": "Oamenii din spatele misiunii",
       "title": "Echipa noastră",
-      "subtitle": "Echipa noastră de bază reuneşte terapeuţi, educatori, asistenţi sociali şi voluntari pasionaţi, uniţi de o singură misiune.",
-      "m1": { "name": "Irina Haritonova", "role": "Director" },
-      "m2": { "name": "Igor Bulgar", "role": "Antrenor" },
+      "subtitle": "Nu avem o echipă de specialişti — fiecare părinte se ocupă separat de copilul său. Noi organizăm antrenamentele de baschet, fotbal şi gimnastică.",
+      "m1": {
+        "name": "Irina Haritonova",
+        "role": "Director"
+      },
+      "m2": {
+        "name": "Igor Bulgar",
+        "role": "Antrenor"
+      },
       "joinText": "Vrei să faci parte din echipa noastră? Căutăm mereu voluntari dedicaţi.",
       "joinBtn": "Devino voluntar"
     },
     "partners": {
-      "label": "Cine ne susţine",
-      "title": "Partenerii noştri de încredere"
+      "label": "Parteneri",
+      "title": "Căutăm parteneri",
+      "desc": "Momentan nu avem parteneri. Dacă reprezinţi o companie sau o organizaţie şi vrei să ne susţii, scrie-ne.",
+      "cta": "Devino partener"
     }
   },
   "seo": {
@@ -210,7 +209,9 @@
       "title": "Galerie — Rain Children",
       "description": "Fotografii de la antrenamentele de fotbal, baschet şi gimnastică, evenimentele şi activităţile copiilor Rain Children."
     },
-    "detail": { "title": "{{name}} — Rain Children" },
+    "detail": {
+      "title": "{{name}} — Rain Children"
+    },
     "home": {
       "title": "Rain Children — Împreună pentru fiecare copil special",
       "description": "Rain Children este o asociaţie obştească din Moldova care organizează antrenamente de fotbal, baschet şi gimnastică pentru copiii cu autism şi sindrom Down."
@@ -242,7 +243,7 @@
     "back": "Înapoi acasă"
   },
   "footer": {
-    "about": "Suntem voluntari dedicaţi sprijinirii copiilor cu autism şi sindrom Down prin terapie, educaţie şi comunitate.",
+    "about": "Suntem voluntari care îi ajută pe copiii cu autism şi sindrom Down să se integreze în societate prin baschet, fotbal şi gimnastică.",
     "nav": "Navigare",
     "programs": "Programe",
     "contact": "Contact",
@@ -263,15 +264,15 @@
     "title": "Întrebări frecvente",
     "subtitle": "Tot ce trebuie să ştii despre Rain Children — misiunea noastră, programele şi cum te poţi implica.",
     "q1": "Ce este Rain Children şi pe cine ajută?",
-    "a1": "Rain Children este o organizaţie de voluntari dedicată sprijinirii copiilor cu autism şi sindrom Down. Oferim programe terapeutice, activităţi educaţionale şi evenimente comunitare pentru ca fiecare copil să-şi atingă potenţialul.",
+    "a1": "Rain Children este o asociaţie obştească din Moldova, deschisă în 2020. Organizăm antrenamente de baschet, fotbal şi gimnastică, pentru ca copiii cu autism şi sindrom Down să se integreze în societate.",
     "q2": "Cum pot deveni voluntar?",
     "a2": "Vizitează pagina de Contact şi completează formularul pentru voluntari. Nu sunt necesare abilităţi speciale — doar dorinţa de a oferi timp şi compasiune. Te vom contacta pentru o întâlnire introductivă.",
     "q3": "Programele sunt gratuite pentru familii?",
-    "a3": "Da. Toate programele şi serviciile noastre sunt oferite gratuit familiilor. Suntem finanţaţi exclusiv din donaţii şi granturi, astfel încât fiecare contribuţie ajunge direct la copii.",
+    "a3": "Da. Toate antrenamentele noastre sunt gratuite pentru familii. Ne susţinem din donaţii, astfel încât fiecare contribuţie ajunge direct la copii.",
     "q4": "Cum pot dona şi voi primi o chitanţă?",
     "a4": "Poţi dona prin pagina Donează folosind un transfer bancar sau plată online. După fiecare donaţie vei primi o chitanţă oficială care poate fi folosită în scopuri fiscale.",
     "q5": "Pot organizaţiile sau şcolile să devină parteneri?",
-    "a5": "Absolut. Colaborăm activ cu şcoli, clinici şi companii. Dacă reprezinţi o organizaţie interesată de un parteneriat, contactează-ne prin pagina Contact şi vom discuta posibilităţile.",
+    "a5": "Da! Momentan nu avem parteneri şi îi căutăm. Dacă reprezinţi o şcoală, o companie sau o organizaţie, scrie-ne prin pagina Contact.",
     "q6": "Unde au loc activităţile?",
     "a6": "Antrenamentele au loc în aer liber, pe două terenuri: baschetul — pe terenul polivalent „La Izvor”, iar fotbalul — pe terenul de fotbal FMF. Iarna ne antrenăm într-o sală, o dată pe săptămână. Pe viitor, cu ajutorul vostru, ne dorim să ne antrenăm de mai multe ori pe săptămână.",
     "places": {
@@ -316,7 +317,7 @@
   "volunteerBanner": {
     "label": "Alătură-te",
     "title": "Devino voluntar şi schimbă vieţi",
-    "desc": "Nu trebuie să fii specialist — trebuie să ai o inimă deschisă să dăruiască. Alătură-te sutelor de voluntari care îşi dedică timpul pentru a crea o lume mai bună pentru copiii noştri.",
+    "desc": "Nu trebuie să fii specialist — trebuie doar să ai o inimă deschisă. Alătură-te voluntarilor noştri la antrenamente şi ajută copiii să se simtă parte din comunitate.",
     "volunteer": "Devino voluntar",
     "programs": "Vezi programele noastre"
   }

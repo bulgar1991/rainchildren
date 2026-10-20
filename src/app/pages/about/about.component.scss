@@ -456,12 +456,13 @@ $t: 0.25s;
     margin: 0;
   }
 
-  &__image-wrap {
+  // One large photo on top, two smaller ones under it.
+  &__gallery {
     grid-column: 2;
     grid-row: 1 / 3;
-    border-radius: 24px;
-    overflow: hidden;
-    box-shadow: 0 24px 64px rgba(15, 30, 61, 0.12);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
 
     @media (max-width: 1024px) {
       grid-column: 1;
@@ -471,10 +472,19 @@ $t: 0.25s;
 
   &__img {
     width: 100%;
-    height: 100%;
-    min-height: 380px;
+    aspect-ratio: 4 / 3;
     object-fit: cover;
     display: block;
+    border-radius: 18px;
+    background: #f1f5fb;
+    box-shadow: 0 16px 40px rgba(15, 30, 61, 0.1);
+
+    &--main {
+      grid-column: 1 / -1;
+      aspect-ratio: 16 / 10;
+      border-radius: 24px;
+      box-shadow: 0 24px 64px rgba(15, 30, 61, 0.12);
+    }
   }
 
   &__timeline {
@@ -751,38 +761,28 @@ $t: 0.25s;
     margin: 0;
   }
 
-  &__grid {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 16px;
-    width: 100%;
-
-    @media (max-width: 1024px) {
-      grid-template-columns: repeat(3, 1fr);
-    }
-    @media (max-width: 560px) {
-      grid-template-columns: repeat(2, 1fr);
-    }
+  &__desc {
+    max-width: 560px;
+    margin: -24px 0 0;
+    font-size: 15px;
+    line-height: 1.75;
+    color: rgba(255, 255, 255, 0.7);
   }
-}
 
-.partner-card {
-  border: 1.5px solid rgba(255, 255, 255, 0.1);
-  border-radius: 12px;
-  padding: 20px 16px;
-  font-size: 13px;
-  font-weight: 700;
-  color: rgba(255, 255, 255, 0.6);
-  text-align: center;
-  background: rgba(255, 255, 255, 0.04);
-  transition:
-    border-color $t $ease,
-    color $t $ease,
-    background $t $ease;
+  &__btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 13px 28px;
+    border-radius: 999px;
+    font-size: 15px;
+    font-weight: 700;
+    color: $navy;
+    background: $accent;
+    text-decoration: none;
+    transition: transform $t $ease;
 
-  &:hover {
-    border-color: rgba(255, 181, 71, 0.4);
-    color: $accent;
-    background: rgba(255, 181, 71, 0.05);
+    &:hover {
+      transform: translateY(-2px);
+    }
   }
 }

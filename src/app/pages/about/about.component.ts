@@ -71,32 +71,31 @@ export class AboutComponent {
       titleKey: 'about.story.m1.title',
       descKey: 'about.story.m1.desc',
     },
-    { year: '2022', titleKey: 'about.story.m2.title', descKey: 'about.story.m2.desc' },
-    { year: '2024', titleKey: 'about.story.m3.title', descKey: 'about.story.m3.desc' },
-    { year: 'about.story.today', titleKey: 'about.story.m4.title', descKey: 'about.story.m4.desc' },
+    { year: 'about.story.today', titleKey: 'about.story.m2.title', descKey: 'about.story.m2.desc' },
   ];
 
+  // Rain Children basketball training, July 2026 (wfolio: IMG_1879, IMG_1942, IMG_2185).
+  readonly storyPhotos = [
+    'assets/images/about/story-1.jpg',
+    'assets/images/about/story-2.jpg',
+    'assets/images/about/story-3.jpg',
+  ];
+
+  // Photos: Irina - wfolio IMG_2131; Igor - from his Facebook.
   readonly team: TeamMember[] = [
     {
+      image: 'assets/images/about/team-irina.jpg',
       initials: 'IH',
       nameKey: 'about.team.m1.name',
       roleKey: 'about.team.m1.role',
       fb: 'https://www.facebook.com/irina.hi.464733',
     },
     {
+      image: 'assets/images/about/team-igor.jpg',
       initials: 'IB',
       nameKey: 'about.team.m2.name',
       roleKey: 'about.team.m2.role',
       fb: 'https://www.facebook.com/igor.bulgar',
     },
-  ];
-
-  readonly partners = [
-    'UNICEF Moldova',
-    'Soros Foundation',
-    'Orange Moldova',
-    'Kaufland Romania',
-    'BCR Banca',
-    'Pro TV',
   ];
 }

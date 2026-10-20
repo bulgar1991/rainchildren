@@ -42,7 +42,7 @@
       <h2 class="about-mission__title">{{ 'about.mission.title' | translate }}</h2>
       <p class="about-mission__desc">{{ 'about.mission.desc' | translate }}</p>
       <ul class="about-mission__features">
-        @for (i of [1, 2, 3]; track i) {
+        @for (i of [1, 2]; track i) {
           <li class="about-mission__feature">
             <span class="about-mission__feature-icon">
               <svg
@@ -113,8 +113,16 @@
       <h2 class="about-story__title">{{ 'about.story.title' | translate }}</h2>
     </div>
 
-    <div class="about-story__image-wrap">
-      <img src="assets/images/about-story.jpg" alt="" class="about-story__img" />
+    <div class="about-story__gallery">
+      @for (photo of storyPhotos; track photo; let first = $first) {
+        <img
+          [src]="photo"
+          alt=""
+          class="about-story__img"
+          [class.about-story__img--main]="first"
+          loading="lazy"
+        />
+      }
     </div>
 
     <div class="about-story__timeline">
@@ -197,21 +205,14 @@
 </section>
 
 <!-- ══════════════════════════════════════════════════════
-     BLOG
-══════════════════════════════════════════════════════ -->
-
-<!-- ══════════════════════════════════════════════════════
      PARTNERS
 ══════════════════════════════════════════════════════ -->
 <section class="about-partners">
   <div class="about-partners__inner max-w-screen-3xl mx-auto lg:px-desktop px-mobile">
     <span class="section-label">{{ 'about.partners.label' | translate }}</span>
     <h2 class="about-partners__title">{{ 'about.partners.title' | translate }}</h2>
-    <div class="about-partners__grid">
-      @for (p of partners; track p) {
-        <div class="partner-card">{{ p }}</div>
-      }
-    </div>
+    <p class="about-partners__desc">{{ 'about.partners.desc' | translate }}</p>
+    <a routerLink="/contact" class="about-partners__btn">{{ 'about.partners.cta' | translate }}</a>
   </div>
 </section>
 
