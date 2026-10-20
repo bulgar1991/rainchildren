@@ -94,7 +94,9 @@
     <div class="about-values__grid">
       @for (v of values; track v.titleKey) {
         <div class="value-card">
-          <div class="value-card__icon" [style.--c]="v.color" [innerHTML]="v.icon"></div>
+          <div class="value-card__icon" [style.--c]="v.color">
+            <i [class]="v.icon" aria-hidden="true"></i>
+          </div>
           <h3 class="value-card__title">{{ v.titleKey | translate }}</h3>
           <p class="value-card__desc">{{ v.descKey | translate }}</p>
         </div>

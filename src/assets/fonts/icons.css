@@ -1,7 +1,7 @@
 @font-face {
     font-family: "icons";
-    src: url("./icons.woff2?8806d7bc403f34e7edf0a8c095b20615") format("woff2"),
-url("./icons.woff?8806d7bc403f34e7edf0a8c095b20615") format("woff");
+    src: url("./icons.woff2?ad4d6a0c08685bcb299f53bf1f334a89") format("woff2"),
+url("./icons.woff?ad4d6a0c08685bcb299f53bf1f334a89") format("woff");
 }
 
 i[class^="icon-"]:before, i[class*=" icon-"]:before {
@@ -15,27 +15,36 @@ i[class^="icon-"]:before, i[class*=" icon-"]:before {
     -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-instagram:before {
+.icon-medal-solid-full:before {
     content: "\f101";
 }
-.icon-gymnastics:before {
+.icon-instagram:before {
     content: "\f102";
 }
-.icon-futbol-solid-full:before {
+.icon-heart-solid-full:before {
     content: "\f103";
 }
-.icon-football:before {
+.icon-gymnastics:before {
     content: "\f104";
 }
-.icon-facebook:before {
+.icon-futbol-solid-full:before {
     content: "\f105";
 }
-.icon-children-solid-full:before {
+.icon-football:before {
     content: "\f106";
 }
-.icon-basketball:before {
+.icon-facebook:before {
     content: "\f107";
 }
-.icon-basketball-solid-full:before {
+.icon-face-smile-solid-full:before {
     content: "\f108";
+}
+.icon-children-solid-full:before {
+    content: "\f109";
+}
+.icon-basketball:before {
+    content: "\f10a";
+}
+.icon-basketball-solid-full:before {
+    content: "\f10b";
 }
