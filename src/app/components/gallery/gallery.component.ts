@@ -16,7 +16,7 @@ interface GalleryImage {
   alt: string;
 }
 
-// Number of photos in assets/images/gallery (gallery-1.jpg ... gallery-<n>.jpg).
+// Number of photos in assets/images/gallery (gallery-1.webp ... gallery-<n>.webp).
 const GALLERY_SIZE = 35;
 
 @Component({
@@ -37,7 +37,7 @@ export class GalleryComponent {
 
   readonly images: GalleryImage[] = Array.from({ length: GALLERY_SIZE }, (_, i) => ({
     id: i + 1,
-    src: `assets/images/gallery/gallery-${i + 1}.jpg`,
+    src: `assets/images/gallery/gallery-${i + 1}.webp`,
     alt: 'gallery.alt',
   }));
 

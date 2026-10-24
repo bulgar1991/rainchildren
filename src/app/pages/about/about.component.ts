@@ -78,22 +78,22 @@ export class AboutComponent {
 
   // Rain Children basketball training, July 2026 (wfolio: IMG_1879, IMG_1942, IMG_2185).
   readonly storyPhotos = [
-    'assets/images/about/story-1.jpg',
-    'assets/images/about/story-2.jpg',
-    'assets/images/about/story-3.jpg',
+    'assets/images/about/story-1.webp',
+    'assets/images/about/story-2.webp',
+    'assets/images/about/story-3.webp',
   ];
 
   // Photos: Irina - wfolio IMG_2131; Igor - from his Facebook.
   readonly team: TeamMember[] = [
     {
-      image: 'assets/images/about/team-irina.jpg',
+      image: 'assets/images/about/team-irina.webp',
       initials: 'IH',
       nameKey: 'about.team.m1.name',
       roleKey: 'about.team.m1.role',
       fb: 'https://www.facebook.com/irina.hi.464733',
     },
     {
-      image: 'assets/images/about/team-igor.jpg',
+      image: 'assets/images/about/team-igor.webp',
       initials: 'IB',
       nameKey: 'about.team.m2.name',
       roleKey: 'about.team.m2.role',

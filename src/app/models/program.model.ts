@@ -11,6 +11,8 @@ export interface Program {
   bannerIcon: string;
   color: string;
   image: string;
+  // JPEG copy of `image` for social-share previews (not every app shows WebP there).
+  shareImage: string;
   // Wide photo for the banner at the top of /programs/:id.
   banner: string;
   // Translation key prefix, e.g. 'programs.football' -> '.title', '.desc', '.a1'...'.a3' in

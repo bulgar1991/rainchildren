@@ -35,7 +35,7 @@ export class BannerSliderComponent implements AfterViewInit, OnDestroy {
 
   readonly slides: BannerSlide[] = [
     {
-      image: 'assets/images/banner/banner-1.jpg',
+      image: 'assets/images/banner/banner-1.webp',
       titleKey: 'banner.slide1.title',
       descKey: 'banner.slide1.desc',
       primaryKey: 'banner.slide1.primary',
@@ -44,7 +44,7 @@ export class BannerSliderComponent implements AfterViewInit, OnDestroy {
       secondaryLink: '/donate',
     },
     {
-      image: 'assets/images/banner/banner-2.jpg',
+      image: 'assets/images/banner/banner-2.webp',
       titleKey: 'banner.slide2.title',
       descKey: 'banner.slide2.desc',
       primaryKey: 'banner.slide2.primary',
@@ -53,7 +53,7 @@ export class BannerSliderComponent implements AfterViewInit, OnDestroy {
       secondaryLink: '/contact',
     },
     {
-      image: 'assets/images/banner/banner-3.jpg',
+      image: 'assets/images/banner/banner-3.webp',
       titleKey: 'banner.slide3.title',
       descKey: 'banner.slide3.desc',
       primaryKey: 'banner.slide3.primary',
@@ -62,7 +62,7 @@ export class BannerSliderComponent implements AfterViewInit, OnDestroy {
       secondaryLink: '/contact',
     },
     {
-      image: 'assets/images/banner/banner-4.jpg',
+      image: 'assets/images/banner/banner-4.webp',
       titleKey: 'banner.slide4.title',
       descKey: 'banner.slide4.desc',
       primaryKey: 'banner.slide4.primary',
@@ -71,7 +71,7 @@ export class BannerSliderComponent implements AfterViewInit, OnDestroy {
       secondaryLink: '/gallery',
     },
     {
-      image: 'assets/images/banner/banner-5.jpg',
+      image: 'assets/images/banner/banner-5.webp',
       titleKey: 'banner.slide5.title',
       descKey: 'banner.slide5.desc',
       primaryKey: 'banner.slide5.primary',
