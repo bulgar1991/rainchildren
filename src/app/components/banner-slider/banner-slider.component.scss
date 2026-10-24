@@ -12,10 +12,15 @@ $t: 0.25s;
   width: 100%;
 
   .swiper,
-  .swiper-wrapper,
+  .swiper-wrapper {
+    width: 100%;
+  }
+
+  // Auto height lets the flex wrapper stretch every slide to the tallest one, so the banner keeps
+  // one height on mobile instead of jumping with each slide's text length.
   .swiper-slide {
     width: 100%;
-    height: 100%;
+    height: auto;
   }
 
   // ── Pagination dots ────────────────────────────────────────────────────────
@@ -29,7 +34,7 @@ $t: 0.25s;
     justify-content: center;
     gap: 8px;
 
-    :global(.swiper-pagination-bullet) {
+    ::ng-deep .swiper-pagination-bullet {
       width: 8px;
       height: 8px;
       background: rgba(255, 255, 255, 0.5);
@@ -39,7 +44,7 @@ $t: 0.25s;
       opacity: 1;
     }
 
-    :global(.swiper-pagination-bullet-active) {
+    ::ng-deep .swiper-pagination-bullet-active {
       width: 28px;
       border-radius: 4px;
       background: #fff;
@@ -100,13 +105,18 @@ $t: 0.25s;
 .banner {
   position: relative;
   width: 100%;
+  height: 100%;
   min-height: 600px;
   display: flex;
   align-items: center;
   overflow: hidden;
 
   @media (max-width: 1024px) {
-    min-height: unset;
+    min-height: 520px;
+  }
+
+  @media (max-width: 768px) {
+    min-height: 460px;
   }
 
   // ── Background image ───────────────────────────────────────────────────────
@@ -149,7 +159,8 @@ $t: 0.25s;
 
     @media (max-width: 768px) {
       padding-inline: 16px;
-      padding-block: 40px;
+      // Bottom clears the pagination dots (bottom: 32px + 8px bullet).
+      padding-block: 40px 72px;
     }
   }
 
