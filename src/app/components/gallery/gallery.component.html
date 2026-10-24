@@ -59,7 +59,13 @@
 
 <!-- Lightbox -->
 @if (active) {
-  <div class="lightbox" role="presentation" (click)="close()">
+  <div
+    class="lightbox"
+    role="presentation"
+    (click)="close()"
+    (touchstart)="onTouchStart($event)"
+    (touchend)="onTouchEnd($event)"
+  >
     <button class="lightbox__close" (click)="close()" aria-label="Close">
       <svg
         viewBox="0 0 24 24"

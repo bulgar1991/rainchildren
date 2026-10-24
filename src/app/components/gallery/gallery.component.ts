@@ -72,6 +72,21 @@ export class GalleryComponent {
     this.activeIndex.set((i + 1) % this.visible.length);
   }
 
+  private touchStartX: number | null = null;
+
+  onTouchStart(e: TouchEvent): void {
+    this.touchStartX = e.changedTouches[0].clientX;
+  }
+
+  onTouchEnd(e: TouchEvent): void {
+    if (this.touchStartX === null) return;
+    const dx = e.changedTouches[0].clientX - this.touchStartX;
+    this.touchStartX = null;
+    if (Math.abs(dx) < 50) return;
+    if (dx > 0) this.prev();
+    else this.next();
+  }
+
   @HostListener('window:keydown', ['$event'])
   onKey(e: KeyboardEvent): void {
     if (this.activeIndex() === null) return;
