@@ -2,6 +2,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { TranslatePipe } from '@ngx-translate/core';
 import { FOUNDED_YEAR, yearsActive } from '@/config/site';
+import { GalleryComponent } from '@components/gallery/gallery.component';
 import { VolunteerBannerComponent } from '../../components/volunteer-banner/volunteer-banner.component';
 
 interface Milestone {
@@ -31,7 +32,7 @@ interface Value {
 
 @Component({
   selector: 'app-about',
-  imports: [RouterLink, TranslatePipe, VolunteerBannerComponent],
+  imports: [RouterLink, TranslatePipe, GalleryComponent, VolunteerBannerComponent],
   templateUrl: './about.component.html',
   styleUrl: './about.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,

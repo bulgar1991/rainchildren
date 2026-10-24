@@ -205,9 +205,6 @@
   },
   "seo": {
     "imageAlt": "Rain Children kids at basketball training",
-    "detail": {
-      "title": "{{name}} — Rain Children"
-    },
     "gallery": {
       "title": "Gallery — Rain Children",
       "description": "Photos from Rain Children football, basketball and gymnastics training, events and everyday activities with the kids."
@@ -222,7 +219,19 @@
     },
     "programs": {
       "title": "Our Programs — Rain Children",
-      "description": "Rain Children programs: adapted football, basketball and gymnastics for children with autism and Down syndrome."
+      "description": "Rain Children programs: adapted football, basketball and gymnastics for children with autism and Down syndrome.",
+      "football": {
+        "title": "Adapted Football for Children — Rain Children",
+        "description": "Adapted football training in Chișinău for children with autism and Down syndrome: ball skills, team games and inclusive tournaments."
+      },
+      "basketball": {
+        "title": "Adapted Basketball for Children — Rain Children",
+        "description": "Basketball training in Chișinău for children with autism and Down syndrome that builds coordination, confidence and team spirit."
+      },
+      "gymnastics": {
+        "title": "Adapted Gymnastics for Children — Rain Children",
+        "description": "Adapted gymnastics in Chișinău for children with autism and Down syndrome: flexibility, balance and body control at each child's pace."
+      }
     },
     "contact": {
       "title": "Contact Us — Rain Children",

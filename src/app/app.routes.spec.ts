@@ -88,6 +88,14 @@ describe('routes', () => {
     }
   });
 
+  it('should show a gallery preview on the about page that links to the full gallery', async () => {
+    await harness.navigateByUrl('/about');
+    expect(page().querySelectorAll('app-gallery .gallery__item').length).toBe(12);
+    expect(page().querySelector('app-gallery .gallery__view-all')?.getAttribute('href')).toBe(
+      '/gallery',
+    );
+  });
+
   it('should show each program its own photo banner', async () => {
     for (const program of PROGRAMS) {
       await harness.navigateByUrl('/programs/' + program.id);
@@ -119,7 +127,10 @@ describe('routes', () => {
     it('should use the program photo when a program page is shared', async () => {
       await harness.navigateByUrl('/programs/' + PROGRAMS[0].id);
 
-      expect(TestBed.inject(Title).getTitle()).toBe('Football — Rain Children');
+      expect(TestBed.inject(Title).getTitle()).toBe(
+        'Adapted Football for Children — Rain Children',
+      );
+      expect(meta("name='description'")).toContain('children with autism and Down syndrome');
       expect(meta("property='og:type'")).toBe('article');
       expect(meta("property='og:image'")).toBe(
         'https://rainchildren.md/assets/images/prog-football.jpg',

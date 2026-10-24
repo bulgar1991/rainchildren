@@ -16,6 +16,7 @@ export const PROGRAMS: Program[] = [
     image: 'assets/images/prog-football.jpg',
     banner: 'assets/images/programs/football-banner.jpg',
     key: 'programs.football',
+    seo: 'seo.programs.football',
     scene: 'football',
   },
   {
@@ -26,6 +27,7 @@ export const PROGRAMS: Program[] = [
     image: 'assets/images/prog-basketball.jpg',
     banner: 'assets/images/programs/basketball-banner.jpg',
     key: 'programs.basketball',
+    seo: 'seo.programs.basketball',
     scene: 'basketball',
   },
   {
@@ -36,6 +38,7 @@ export const PROGRAMS: Program[] = [
     image: 'assets/images/prog-gymnastics.jpg',
     banner: 'assets/images/programs/gymnastics-banner.jpg',
     key: 'programs.gymnastics',
+    seo: 'seo.programs.gymnastics',
     scene: 'gymnastics',
   },
 ];

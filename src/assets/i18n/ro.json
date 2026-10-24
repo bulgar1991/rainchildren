@@ -209,9 +209,6 @@
       "title": "Galerie — Rain Children",
       "description": "Fotografii de la antrenamentele de fotbal, baschet şi gimnastică, evenimentele şi activităţile copiilor Rain Children."
     },
-    "detail": {
-      "title": "{{name}} — Rain Children"
-    },
     "home": {
       "title": "Rain Children — Împreună pentru fiecare copil special",
       "description": "Rain Children este o asociaţie obştească din Moldova care organizează antrenamente de fotbal, baschet şi gimnastică pentru copiii cu autism şi sindrom Down."
@@ -222,7 +219,19 @@
     },
     "programs": {
       "title": "Programele noastre — Rain Children",
-      "description": "Programele Rain Children: fotbal, baschet şi gimnastică adaptate pentru copiii cu autism şi sindrom Down."
+      "description": "Programele Rain Children: fotbal, baschet şi gimnastică adaptate pentru copiii cu autism şi sindrom Down.",
+      "football": {
+        "title": "Fotbal adaptat pentru copii — Rain Children",
+        "description": "Antrenamente de fotbal adaptate în Chişinău pentru copiii cu autism şi sindrom Down: exerciţii cu mingea, jocuri de echipă şi turnee incluzive."
+      },
+      "basketball": {
+        "title": "Baschet adaptat pentru copii — Rain Children",
+        "description": "Antrenamente de baschet în Chişinău pentru copiii cu autism şi sindrom Down, care dezvoltă coordonarea, încrederea în sine şi spiritul de echipă."
+      },
+      "gymnastics": {
+        "title": "Gimnastică adaptată pentru copii — Rain Children",
+        "description": "Gimnastică adaptată în Chişinău pentru copiii cu autism şi sindrom Down: flexibilitate, echilibru şi controlul corpului, în ritmul fiecărui copil."
+      }
     },
     "contact": {
       "title": "Contact — Rain Children",

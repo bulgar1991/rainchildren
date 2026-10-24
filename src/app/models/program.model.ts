@@ -16,6 +16,8 @@ export interface Program {
   // Translation key prefix, e.g. 'programs.football' -> '.title', '.desc', '.a1'...'.a3' in
   // assets/i18n/*.json.
   key: string;
+  // SEO key prefix for /programs/:id, e.g. 'seo.programs.football' -> '.title', '.description'.
+  seo: string;
   // Animated scene shown on the program page (football / basketball / gymnastics).
   scene?: SportScene;
   // Real clip from training; shown instead of the drawn `scene` once it is set.

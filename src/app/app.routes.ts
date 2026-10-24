@@ -49,7 +49,7 @@ export const routes: Routes = [
         (m) => m.ProgramDetailComponent,
       ),
     // Bound to the component's `program` input (withComponentInputBinding in app.config.ts).
-    resolve: { program: itemSeoResolver(findProgram, '.desc') },
+    resolve: { program: itemSeoResolver(findProgram) },
   },
   {
     path: 'contact',

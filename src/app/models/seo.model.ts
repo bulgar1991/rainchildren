@@ -10,7 +10,7 @@ export interface SeoData {
   title: string;
   description: string;
   // Values for {{placeholders}} in the title / description. Each value is a translation key too,
-  // e.g. { name: 'programs.football.title' } for title 'seo.detail.title' ("{{name}} — Rain Children").
+  // e.g. { name: 'programs.football.title' } for a title "{{name}} — Rain Children".
   params?: Record<string, string>;
   // og:type. Default 'website'.
   type?: 'website' | 'article';
