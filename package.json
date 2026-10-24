@@ -1,10 +1,11 @@
 {
   "name": "rainchildren",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "deploy": "ng build && node --env-file=.env scripts/deploy.mjs",
     "watch": "ng build --watch --configuration development",
     "lint": "ng lint --fix",
     "prettier": "npx prettier --write .",
@@ -68,6 +69,7 @@
     "@vitest/ui": "^4.1.11",
     "angular-eslint": "^22.2.0",
     "autoprefixer": "^10.5.5",
+    "basic-ftp": "^6.2.3",
     "eslint": "^10.10.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-prettier": "^5.5.6",
